@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Digitalizacion5S.View.AccesoAuditorias"
+             BackgroundColor="#FCFCD7">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Image Source="logo_prolamsa.png"
+                       WidthRequest="300"
+                       HeightRequest="150"
+                       HorizontalOptions="CenterAndExpand"/>
+
+                <StackLayout x:Name="botones_din">
+
+                </StackLayout>
+
+                <Frame Margin="34" Padding="20,10" CornerRadius="20" BackgroundColor="Black">
+                    <StackLayout>
+                        <Label Text="Ingresa a tus resultados"
+                               TextColor="#FFC803"
+                               VerticalOptions="CenterAndExpand"
+                               HorizontalOptions="CenterAndExpand"
+                               FontAttributes="Bold"
+                               FontSize="17"/>
+                        
+                        <StackLayout Orientation="Horizontal">
+                            <Button Text="Mis resultados"
+                                    HorizontalOptions="CenterAndExpand"
+                                    VerticalOptions="CenterAndExpand"
+                                    CornerRadius="10"
+                                    BackgroundColor="#FFC803"
+                                    TextColor="Black"
+                                    Command="{ Binding ConsultaPropCommand }"/>
+                                    <!--Clicked="Resultados"-->
+                                    
+
+                            <Button Text="Mis Auditorias"
+                                    HorizontalOptions="CenterAndExpand"
+                                    VerticalOptions="CenterAndExpand"
+                                    CornerRadius="10"
+                                    BackgroundColor="#FFC803"
+                                    TextColor="Black"
+                                    Command="{ Binding ConsultaCommand }"/>
+                                    <!--Clicked="Auditorias"-->
+                        </StackLayout>
+                        
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

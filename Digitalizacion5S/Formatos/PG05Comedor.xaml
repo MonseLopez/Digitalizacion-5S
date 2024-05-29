@@ -1,0 +1,973 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Digitalizacion5S.Formatos.PG05Comedor"
+             BackgroundColor="#D7EBB7"
+             Title="Comedor">
+    <ContentPage.Content>
+        <!--Titulo y area del formato-->
+        <ScrollView>
+            <StackLayout>
+                <Grid>
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <StackLayout Grid.Column="0" Grid.Row="0" BackgroundColor="#FFC803">
+                        <Label Text="Evaluación 5'S"
+                               VerticalOptions="CenterAndExpand" 
+                               HorizontalOptions="CenterAndExpand" 
+                               FontSize="33"
+                               HorizontalTextAlignment="Center"
+                               FontAttributes="Bold"
+                               TextColor="Black"/>
+                    </StackLayout>
+
+                    <StackLayout Grid.Column="1" Grid.Row="0" BackgroundColor="#FFC803">
+                        <Label Text="Comedor"
+                           VerticalOptions="CenterAndExpand" 
+                           HorizontalOptions="CenterAndExpand" 
+                           FontSize="33"
+                           HorizontalTextAlignment="Center"
+                           FontAttributes="Bold"
+                           TextColor="Black"/>
+                    </StackLayout>
+
+                </Grid>
+
+                <StackLayout>
+                    <Label Text="La presente evaluación esta basada en el cumplimiento a los criterios y/o estandares establecidos en el instructivo de 5´s SG-IT-04 y a la normatividad aplicable en el RIT y RSI.  Valor de cada criterio 0.33 puntos.  Los hallazgos se registran en el apartado correspondiente definiendo acción a implementar, responsable y fecha compromiso y se deberán cerrar en maximo 3 días a partir de la fecha de auditoria."
+                           TextColor="Black"
+                           FontSize="11"
+                           Padding="10,0,10,0"/>
+                </StackLayout>
+
+                <!--5S-->
+                <StackLayout>
+                    <StackLayout BackgroundColor="#FFC803">
+                        <Label Text="5S"
+                               VerticalOptions="CenterAndExpand"
+                               HorizontalOptions="CenterAndExpand"
+                               TextColor="Black"
+                               FontAttributes="Bold"
+                               FontSize="30"/>
+                    </StackLayout>
+
+                    <!--Inicio del formulario-->
+                    <StackLayout>
+                        <Label Text="1.- ¿Existe en el comedor artículos o elementos innecesarios? (Mobiliario obsoleto o que no se utiliza, cajas, botes, empaques, etc.)"
+                               FontAttributes="Bold"
+                               Padding="15,10,15,0"
+                               TextColor="Black"/>
+
+                        <StackLayout Padding="15,0,15,15">
+                            <RadioButton x:Name="C1F5" GroupName="P1F5" Content="Cumple"
+                                         BackgroundColor="#FFC803" 
+                                         TextColor="Black"
+                                         CornerRadius="30"/>
+
+                            <RadioButton x:Name="NC1F5" GroupName="P1F5" Content="No Cumple"
+                                         BackgroundColor="#FFC803" 
+                                         TextColor="Black"
+                                         CornerRadius="30"/>
+
+                            <RadioButton x:Name="NA1F5" GroupName="P1F5" Content="No Aplica"
+                                         BackgroundColor="#FFC803" 
+                                         TextColor="Black"
+                                         CornerRadius="30"/>
+                        </StackLayout>
+
+                        <Label Text="2.- ¿El mobiliario se encuentra limpio y en buen estado? (mesas y sillas no rotas, no chuecas"
+                               FontAttributes="Bold"
+                               Padding="15,10,15,0"
+                               TextColor="Black"/>
+
+                        <StackLayout Padding="15,0,15,15">
+                            <RadioButton x:Name="C2F5" GroupName="P2F5" Content="Cumple"
+                                         BackgroundColor="#FFC803" 
+                                         TextColor="Black"
+                                         CornerRadius="30"/>
+
+                            <RadioButton x:Name="NC2F5" GroupName="P2F5" Content="No Cumple"
+                                         BackgroundColor="#FFC803" 
+                                         TextColor="Black"
+                                         CornerRadius="30"/>
+
+                            <RadioButton x:Name="NA2F5" GroupName="P2F5" Content="No Aplica"
+                                         BackgroundColor="#FFC803" 
+                                         TextColor="Black"
+                                         CornerRadius="30"/>
+                        </StackLayout>
+
+                        <Label Text="3.- ¿Los hornos de microondas y refrigeradores se encuentran limpios y funcionan?&#10;NOTA: Se debe validar que todos los hornos y refrigeradores funcionan correctamente y las rejillas de los refrigeradores esten colocadas correctamente"
+                               FontAttributes="Bold"
+                               Padding="15,10,15,0"
+                               TextColor="Black"/>
+
+                        <StackLayout Padding="15,0,15,15">
+                            <RadioButton x:Name="C3F5" GroupName="P3F5" Content="Cumple"
+                                         BackgroundColor="#FFC803" 
+                                         TextColor="Black"
+                                         CornerRadius="30"/>
+
+                            <RadioButton x:Name="NC3F5" GroupName="P3F5" Content="No Cumple"
+                                         BackgroundColor="#FFC803" 
+                                         TextColor="Black"
+                                         CornerRadius="30"/>
+
+                            <RadioButton x:Name="NA3F5" GroupName="P3F5" Content="No Aplica"
+                                         BackgroundColor="#FFC803" 
+                                         TextColor="Black"
+                                         CornerRadius="30"/>
+                        </StackLayout>
+
+                        <Label Text="4.- ¿Las parrillas y/o estufas eléctricas funcionan y encienden girando las perillas?"
+                               FontAttributes="Bold"
+                               Padding="15,10,15,0"
+                               TextColor="Black"/>
+
+                        <StackLayout Padding="15,0,15,15">
+                            <RadioButton x:Name="C4F5" GroupName="P4F5" Content="Cumple"
+                                         BackgroundColor="#FFC803" 
+                                         TextColor="Black"
+                                         CornerRadius="30"/>
+
+                            <RadioButton x:Name="NC4F5" GroupName="P4F5" Content="No Cumple"
+                                         BackgroundColor="#FFC803" 
+                                         TextColor="Black"
+                                         CornerRadius="30"/>
+
+                            <RadioButton x:Name="NA4F5" GroupName="P4F5" Content="No Aplica"
+                                         BackgroundColor="#FFC803" 
+                                         TextColor="Black"
+                                         CornerRadius="30"/>
+                        </StackLayout>
+
+                        <Label Text="5.- ¿El reloj se encuentra funcionando e indica la hora de manera correcta?"
+                               FontAttributes="Bold"
+                               Padding="15,10,15,0"
+                               TextColor="Black"/>
+
+                        <StackLayout Padding="15,0,15,15">
+                            <RadioButton x:Name="C5F5" GroupName="P5F5" Content="Cumple"
+                                         BackgroundColor="#FFC803" 
+                                         TextColor="Black"
+                                         CornerRadius="30"/>
+
+                            <RadioButton x:Name="NC5F5" GroupName="P5F5" Content="No Cumple"
+                                         BackgroundColor="#FFC803" 
+                                         TextColor="Black"
+                                         CornerRadius="30"/>
+
+                            <RadioButton x:Name="NA5F5" GroupName="P5F5" Content="No Aplica"
+                                         BackgroundColor="#FFC803" 
+                                         TextColor="Black"
+                                         CornerRadius="30"/>
+                        </StackLayout>
+
+                        <Label Text="6.- ¿El aire acondicionado (2 equipos) funcionan correctamente?"
+                               FontAttributes="Bold"
+                               Padding="15,10,15,0"
+                               TextColor="Black"/>
+
+                        <StackLayout Padding="15,0,15,15">
+                            <RadioButton x:Name="C6F5" GroupName="P6F5" Content="Cumple"
+                                         BackgroundColor="#FFC803" 
+                                         TextColor="Black"
+                                         CornerRadius="30"/>
+
+                            <RadioButton x:Name="NC6F5" GroupName="P6F5" Content="No Cumple"
+                                         BackgroundColor="#FFC803" 
+                                         TextColor="Black"
+                                         CornerRadius="30"/>
+
+                            <RadioButton x:Name="NA6F5" GroupName="P6F5" Content="No Aplica"
+                                         BackgroundColor="#FFC803" 
+                                         TextColor="Black"
+                                         CornerRadius="30"/>
+                        </StackLayout>
+
+                        <Label Text="7.- ¿Las mesas cuentan con un salero y servilletas?"
+                               FontAttributes="Bold"
+                               Padding="15,10,15,0"
+                               TextColor="Black"/>
+
+                        <StackLayout Padding="15,0,15,15">
+                            <RadioButton x:Name="C7F5" GroupName="P7F5" Content="Cumple"
+                                         BackgroundColor="#FFC803" 
+                                         TextColor="Black"
+                                         CornerRadius="30"/>
+
+                            <RadioButton x:Name="NC7F5" GroupName="P7F5" Content="No Cumple"
+                                         BackgroundColor="#FFC803" 
+                                         TextColor="Black"
+                                         CornerRadius="30"/>
+
+                            <RadioButton x:Name="NA7F5" GroupName="P7F5" Content="No Aplica"
+                                         BackgroundColor="#FFC803" 
+                                         TextColor="Black"
+                                         CornerRadius="30"/>
+                        </StackLayout>
+
+                        <Label Text="8.- ¿Las lamparas de emergencia funcionan?"
+                               FontAttributes="Bold"
+                               Padding="15,10,15,0"
+                               TextColor="Black"/>
+
+                        <StackLayout Padding="15,0,15,15">
+                            <RadioButton x:Name="C8F5" GroupName="P8F5" Content="Cumple"
+                                         BackgroundColor="#FFC803" 
+                                         TextColor="Black"
+                                         CornerRadius="30"/>
+
+                            <RadioButton x:Name="NC8F5" GroupName="P8F5" Content="No Cumple"
+                                         BackgroundColor="#FFC803" 
+                                         TextColor="Black"
+                                         CornerRadius="30"/>
+
+                            <RadioButton x:Name="NA8F5" GroupName="P8F5" Content="No Aplica"
+                                         BackgroundColor="#FFC803" 
+                                         TextColor="Black"
+                                         CornerRadius="30"/>
+                        </StackLayout>
+
+                        <Label Text="9.- ¿El dispensador de agua funciona de manera correcta?"
+                               FontAttributes="Bold"
+                               Padding="15,10,15,0"
+                               TextColor="Black"/>
+
+                        <StackLayout Padding="15,0,15,15">
+                            <RadioButton x:Name="C9F5" GroupName="P9F5" Content="Cumple"
+                                         BackgroundColor="#FFC803" 
+                                         TextColor="Black"
+                                         CornerRadius="30"/>
+
+                            <RadioButton x:Name="NC9F5" GroupName="P9F5" Content="No Cumple"
+                                         BackgroundColor="#FFC803" 
+                                         TextColor="Black"
+                                         CornerRadius="30"/>
+
+                            <RadioButton x:Name="NA9F5" GroupName="P9F5" Content="No Aplica"
+                                         BackgroundColor="#FFC803" 
+                                         TextColor="Black"
+                                         CornerRadius="30"/>
+                        </StackLayout>
+
+                        <Label Text="10.- ¿La máquina de café y bebidas funciona correctamente?"
+                               FontAttributes="Bold"
+                               Padding="15,10,15,0"
+                               TextColor="Black"/>
+
+                        <StackLayout Padding="15,0,15,15">
+                            <RadioButton x:Name="C10F5" GroupName="P10F5" Content="Cumple"
+                                         BackgroundColor="#FFC803" 
+                                         TextColor="Black"
+                                         CornerRadius="30"/>
+
+                            <RadioButton x:Name="NC10F5" GroupName="P10F5" Content="No Cumple"
+                                         BackgroundColor="#FFC803" 
+                                         TextColor="Black"
+                                         CornerRadius="30"/>
+
+                            <RadioButton x:Name="NA10F5" GroupName="P10F5" Content="No Aplica"
+                                         BackgroundColor="#FFC803" 
+                                         TextColor="Black"
+                                         CornerRadius="30"/>
+                        </StackLayout>
+
+                        <Label Text="11.- ¿Existe en el área de trabajo un programa de actividades de limpieza? %#10;NOTA: Se debe observar registro de actividades de limpieza, firma del supervisor o responsable para validar que la actividad fue realizada y que el formato se encuentre actualizado en cuanto a frecuencia y fecha)"
+                               FontAttributes="Bold"
+                               Padding="15,10,15,0"
+                               TextColor="Black"/>
+
+                        <StackLayout Padding="15,0,15,15">
+                            <RadioButton x:Name="C11F5" GroupName="P11F5" Content="Cumple"
+                                         BackgroundColor="#FFC803" 
+                                         TextColor="Black"
+                                         CornerRadius="30"/>
+
+                            <RadioButton x:Name="NC11F5" GroupName="P11F5" Content="No Cumple"
+                                         BackgroundColor="#FFC803" 
+                                         TextColor="Black"
+                                         CornerRadius="30"/>
+
+                            <RadioButton x:Name="NA11F5" GroupName="P11F5" Content="No Aplica"
+                                         BackgroundColor="#FFC803" 
+                                         TextColor="Black"
+                                         CornerRadius="30"/>
+                        </StackLayout>
+
+                        <Label Text="12.- ¿Existe extintor en el área y este se encuentra vigente?"
+                               FontAttributes="Bold"
+                               Padding="15,10,15,0"
+                               TextColor="Black"/>
+
+                        <StackLayout Padding="15,0,15,15">
+                            <RadioButton x:Name="C12F5" GroupName="P12F5" Content="Cumple"
+                                         BackgroundColor="#FFC803" 
+                                         TextColor="Black"
+                                         CornerRadius="30"/>
+
+                            <RadioButton x:Name="NC12F5" GroupName="P12F5" Content="No Cumple"
+                                         BackgroundColor="#FFC803" 
+                                         TextColor="Black"
+                                         CornerRadius="30"/>
+
+                            <RadioButton x:Name="NA12F5" GroupName="P12F5" Content="No Aplica"
+                                         BackgroundColor="#FFC803" 
+                                         TextColor="Black"
+                                         CornerRadius="30"/>
+                        </StackLayout>
+
+                        <Label Text="13.- ¿El dispositivo para repeler insectos funciona correctamente?"
+                               FontAttributes="Bold"
+                               Padding="15,10,15,0"
+                               TextColor="Black"/>
+
+                        <StackLayout Padding="15,0,15,15">
+                            <RadioButton x:Name="C13F5" GroupName="P13F5" Content="Cumple"
+                                         BackgroundColor="#FFC803" 
+                                         TextColor="Black"
+                                         CornerRadius="30"/>
+
+                            <RadioButton x:Name="NC13F5" GroupName="P13F5" Content="No Cumple"
+                                         BackgroundColor="#FFC803" 
+                                         TextColor="Black"
+                                         CornerRadius="30"/>
+
+                            <RadioButton x:Name="NA13F5" GroupName="P13F5" Content="No Aplica"
+                                         BackgroundColor="#FFC803" 
+                                         TextColor="Black"
+                                         CornerRadius="30"/>
+                        </StackLayout>
+
+                        <Label Text="14.- ¿La administración visual en general esta actualizada y se encuentra en buenas condiciones? (señaliticas, lonas, porta hojas, tableros, delimitaciones, etc.)"
+                               FontAttributes="Bold"
+                               Padding="15,10,15,0"
+                               TextColor="Black"/>
+
+                        <StackLayout Padding="15,0,15,15">
+                            <RadioButton x:Name="C14F5" GroupName="P14F5" Content="Cumple"
+                                         BackgroundColor="#FFC803" 
+                                         TextColor="Black"
+                                         CornerRadius="30"/>
+
+                            <RadioButton x:Name="NC14F5" GroupName="P14F5" Content="No Cumple"
+                                         BackgroundColor="#FFC803" 
+                                         TextColor="Black"
+                                         CornerRadius="30"/>
+
+                            <RadioButton x:Name="NA14F5" GroupName="P14F5" Content="No Aplica"
+                                         BackgroundColor="#FFC803" 
+                                         TextColor="Black"
+                                         CornerRadius="30"/>
+                        </StackLayout>
+
+                        <Label Text="15.- ¿La maquina de café y bebidas funciona correctamente?"
+                               FontAttributes="Bold"
+                               Padding="15,10,15,0"
+                               TextColor="Black"/>
+
+                        <StackLayout Padding="15,0,15,15">
+                            <RadioButton x:Name="C15F5" GroupName="P15F5" Content="Cumple"
+                                         BackgroundColor="#FFC803" 
+                                         TextColor="Black"
+                                         CornerRadius="30"/>
+
+                            <RadioButton x:Name="NC15F5" GroupName="P15F5" Content="No Cumple"
+                                         BackgroundColor="#FFC803" 
+                                         TextColor="Black"
+                                         CornerRadius="30"/>
+
+                            <RadioButton x:Name="NA15F5" GroupName="P15F5" Content="No Aplica"
+                                         BackgroundColor="#FFC803" 
+                                         TextColor="Black"
+                                         CornerRadius="30"/>
+                        </StackLayout>
+
+                        <Label Text="16.- ¿La iluminación funciona correctamente?&#10;NOTA: No deben de existir lamparas fundidas o que no enciendan"
+                               FontAttributes="Bold"
+                               Padding="15,10,15,0"
+                               TextColor="Black"/>
+
+                        <StackLayout Padding="15,0,15,15">
+                            <RadioButton x:Name="C16F5" GroupName="P16F5" Content="Cumple"
+                                         BackgroundColor="#FFC803" 
+                                         TextColor="Black"
+                                         CornerRadius="30"/>
+
+                            <RadioButton x:Name="NC16F5" GroupName="P16F5" Content="No Cumple"
+                                         BackgroundColor="#FFC803" 
+                                         TextColor="Black"
+                                         CornerRadius="30"/>
+
+                            <RadioButton x:Name="NA16F5" GroupName="P16F5" Content="No Aplica"
+                                         BackgroundColor="#FFC803" 
+                                         TextColor="Black"
+                                         CornerRadius="30"/>
+                        </StackLayout>
+
+                        <Label Text="17.- ¿Los contenedores de basura se encuentran limpios y acorde a estandar establecido?"
+                               FontAttributes="Bold"
+                               Padding="15,10,15,0"
+                               TextColor="Black"/>
+
+                        <StackLayout Padding="15,0,15,15">
+                            <RadioButton x:Name="C17F5" GroupName="P17F5" Content="Cumple"
+                                         BackgroundColor="#FFC803" 
+                                         TextColor="Black"
+                                         CornerRadius="30"/>
+
+                            <RadioButton x:Name="NC17F5" GroupName="P17F5" Content="No Cumple"
+                                         BackgroundColor="#FFC803" 
+                                         TextColor="Black"
+                                         CornerRadius="30"/>
+
+                            <RadioButton x:Name="NA17F5" GroupName="P17F5" Content="No Aplica"
+                                         BackgroundColor="#FFC803" 
+                                         TextColor="Black"
+                                         CornerRadius="30"/>
+                        </StackLayout>
+
+                        <Label Text="18.- ¿La pantalla (T.V.) se encuentra encendida, la información que se presenta esta actualizada y se escucha de manera clara y fuerte?"
+                               FontAttributes="Bold"
+                               Padding="15,10,15,0"
+                               TextColor="Black"/>
+
+                        <StackLayout Padding="15,0,15,15">
+                            <RadioButton x:Name="C18F5" GroupName="P18F5" Content="Cumple"
+                                         BackgroundColor="#FFC803" 
+                                         TextColor="Black"
+                                         CornerRadius="30"/>
+
+                            <RadioButton x:Name="NC18F5" GroupName="P18F5" Content="No Cumple"
+                                         BackgroundColor="#FFC803" 
+                                         TextColor="Black"
+                                         CornerRadius="30"/>
+
+                            <RadioButton x:Name="NA18F5" GroupName="P18F5" Content="No Aplica"
+                                         BackgroundColor="#FFC803" 
+                                         TextColor="Black"
+                                         CornerRadius="30"/>
+                        </StackLayout>
+
+                        <Label Text="19.- ¿La instalación eléctrica se encuentra en buen estado? &#10;NOTA: Los apagadores y contactos funcionan correctamente"
+                               FontAttributes="Bold"
+                               Padding="15,10,15,0"
+                               TextColor="Black"/>
+
+                        <StackLayout Padding="15,0,15,15">
+                            <RadioButton x:Name="C19F5" GroupName="P19F5" Content="Cumple"
+                                         BackgroundColor="#FFC803" 
+                                         TextColor="Black"
+                                         CornerRadius="30"/>
+
+                            <RadioButton x:Name="NC19F5" GroupName="P19F5" Content="No Cumple"
+                                         BackgroundColor="#FFC803" 
+                                         TextColor="Black"
+                                         CornerRadius="30"/>
+
+                            <RadioButton x:Name="NA19F5" GroupName="P19F5" Content="No Aplica"
+                                         BackgroundColor="#FFC803" 
+                                         TextColor="Black"
+                                         CornerRadius="30"/>
+                        </StackLayout>
+
+                        <Label Text="20.- ¿El extractor de humos funciona correctamente?"
+                               FontAttributes="Bold"
+                               Padding="15,10,15,0"
+                               TextColor="Black"/>
+
+                        <StackLayout Padding="15,0,15,15">
+                            <RadioButton x:Name="C20F5" GroupName="P20F5" Content="Cumple"
+                                         BackgroundColor="#FFC803" 
+                                         TextColor="Black"
+                                         CornerRadius="30"/>
+
+                            <RadioButton x:Name="NC20F5" GroupName="P20F5" Content="No Cumple"
+                                         BackgroundColor="#FFC803" 
+                                         TextColor="Black"
+                                         CornerRadius="30"/>
+
+                            <RadioButton x:Name="NA20F5" GroupName="P20F5" Content="No Aplica"
+                                         BackgroundColor="#FFC803" 
+                                         TextColor="Black"
+                                         CornerRadius="30"/>
+                        </StackLayout>
+
+                        <Label Text="21.- ¿Existe un estándar visual y este se encuentra publicado o visible? (Formato SG-43)"
+                               FontAttributes="Bold"
+                               Padding="15,10,15,0"
+                               TextColor="Black"/>
+
+                        <StackLayout Padding="15,0,15,15">
+                            <RadioButton x:Name="C21F5" GroupName="P21F5" Content="Cumple"
+                                         BackgroundColor="#FFC803" 
+                                         TextColor="Black"
+                                         CornerRadius="30"/>
+
+                            <RadioButton x:Name="NC21F5" GroupName="P21F5" Content="No Cumple"
+                                         BackgroundColor="#FFC803" 
+                                         TextColor="Black"
+                                         CornerRadius="30"/>
+
+                            <RadioButton x:Name="NA21F5" GroupName="P21F5" Content="No Aplica"
+                                         BackgroundColor="#FFC803" 
+                                         TextColor="Black"
+                                         CornerRadius="30"/>
+                        </StackLayout>
+
+                        <Label Text="22.- ¿El área cumple con el estándar establecido?"
+                               FontAttributes="Bold"
+                               Padding="15,10,15,0"
+                               TextColor="Black"/>
+
+                        <StackLayout Padding="15,0,15,15">
+                            <RadioButton x:Name="C22F5" GroupName="P22F5" Content="Cumple"
+                                         BackgroundColor="#FFC803" 
+                                         TextColor="Black"
+                                         CornerRadius="30"/>
+
+                            <RadioButton x:Name="NC22F5" GroupName="P22F5" Content="No Cumple"
+                                         BackgroundColor="#FFC803" 
+                                         TextColor="Black"
+                                         CornerRadius="30"/>
+
+                            <RadioButton x:Name="NA22F5" GroupName="P22F5" Content="No Aplica"
+                                         BackgroundColor="#FFC803" 
+                                         TextColor="Black"
+                                         CornerRadius="30"/>
+                        </StackLayout>
+
+                        <!--Sección de hallazgos-->
+                        <StackLayout BackgroundColor="#FFC803" Padding="0,10,0,10" Margin="0,10,0,-16">
+                            <Label Text="Hallazgos"
+                               VerticalOptions="CenterAndExpand"
+                               HorizontalOptions="CenterAndExpand"
+                               TextColor="Black"
+                               FontAttributes="Bold"
+                               FontSize="30"/>
+                        </StackLayout>
+
+                        <ScrollView Orientation="Horizontal">
+                            <StackLayout Orientation="Horizontal">
+                                <StackLayout>
+                                    <Grid Margin="5,1,0,0">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*"/>
+                                            <ColumnDefinition Width="280"/>
+                                        </Grid.ColumnDefinitions>
+
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="100"/>
+                                            <RowDefinition Height="50"/>
+                                            <RowDefinition Height="50"/>
+                                        </Grid.RowDefinitions>
+
+                                        <StackLayout Grid.Column="0" Grid.Row="0" Padding="5,60,1,10">
+                                            <Label Text="Hallazgos:"                           
+                                                   TextColor="Black"
+                                                   FontSize="17"
+                                                   FontAttributes="Bold"/>
+                                        </StackLayout>
+
+                                        <StackLayout Grid.Column="1" Grid.Row="0" Padding="-29,27,50,0">
+                                            <Editor Keyboard="Text"  
+                                                    Placeholder="Escriba aqui los hallazgos"   
+                                                    PlaceholderColor="#606052" 
+                                                    MaxLength="250"   
+                                                    BackgroundColor="#FFC803" 
+                                                    TextColor="Black"   
+                                                    FontSize="15"    
+                                                    HeightRequest="97"     
+                                                    x:Name="F5H1"    
+                                                    Text="{Binding Hallaz1Txt, Mode=TwoWay}"/>
+                                        </StackLayout>
+
+                                        <StackLayout Grid.Column="0" Grid.Row="1" Padding="5,40,1,0">
+                                            <Label Text="Acciones:"    
+                                                   TextColor="Black"       
+                                                   FontSize="17"          
+                                                   FontAttributes="Bold"/>
+                                        </StackLayout>
+
+                                        <StackLayout Grid.Column="1" Grid.Row="1" Padding="-29,0,50,0">
+                                            <Entry Keyboard="Text"           
+                                                   Placeholder="Escriba aqui las acciones"         
+                                                   PlaceholderColor="#606052"   
+                                                   MaxLength="100"         
+                                                   BackgroundColor="#FFC803"                 
+                                                   Margin="0,30,0,0"                 
+                                                   TextColor="Black"                 
+                                                   FontSize="15"                  
+                                                   x:Name="F5A1"                   
+                                                   Text="{Binding Accion1Txt, Mode=TwoWay}"/>
+                                        </StackLayout>
+
+                                        <StackLayout Grid.Column="0" Grid.Row="2" Padding="5,40,45,0">
+                                            <Label Text="Fecha &#10;Compromiso:"                       
+                                                   TextColor="Black"            
+                                                   FontSize="14.3"          
+                                                   FontAttributes="Bold"/>
+                                        </StackLayout>
+
+                                        <StackLayout Grid.Column="1" Grid.Row="2" Padding="-29,0,50,0">
+                                            <Entry BackgroundColor="#FFC803"               
+                                                   PlaceholderColor="#606052"              
+                                                   MaxLength="100"             
+                                                   Margin="0,30,0,0"              
+                                                   FontSize="15"               
+                                                   Placeholder="dd/MM/yyyy"                 
+                                                   TextColor="Black"                 
+                                                   x:Name="F5D1"                     
+                                                   Text="{Binding Fecha1Txt, Mode=TwoWay}"/>
+                                        </StackLayout>
+
+                                    </Grid>
+                                </StackLayout>
+
+                                <StackLayout>
+                                    <Grid Margin="5,1,0,0">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*"/>
+                                            <ColumnDefinition Width="280"/>
+                                        </Grid.ColumnDefinitions>
+
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="100"/>
+                                            <RowDefinition Height="50"/>
+                                            <RowDefinition Height="50"/>
+                                            <RowDefinition Height="*"/>
+                                        </Grid.RowDefinitions>
+
+                                        <StackLayout Grid.Column="0" Grid.Row="0" Padding="5,60,1,10">
+                                            <Label Text="Hallazgos:" 
+                                                   TextColor="Black"
+                                                   FontSize="17"
+                                                   FontAttributes="Bold"/>
+                                        </StackLayout>
+
+                                        <StackLayout Grid.Column="1" Grid.Row="0" Padding="-29,27,50,0">
+                                            <Editor Keyboard="Text" 
+                                                    Placeholder="Escriba aqui los hallazgos" 
+                                                    PlaceholderColor="#606052"
+                                                    MaxLength="250"
+                                                    BackgroundColor="#FFC803"
+                                                    TextColor="Black"
+                                                    FontSize="15"
+                                                    HeightRequest="97"
+                                                    x:Name="F5H2"
+                                                    Text="{Binding Hallaz2Txt, Mode=TwoWay}"/>
+                                        </StackLayout>
+
+                                        <StackLayout Grid.Column="0" Grid.Row="1" Padding="5,40,1,0">
+                                            <Label Text="Acciones:"                 
+                                                   TextColor="Black"                
+                                                   FontSize="17"                
+                                                   FontAttributes="Bold"/>
+                                        </StackLayout>
+
+                                        <StackLayout Grid.Column="1" Grid.Row="1" Padding="-29,0,50,0">
+                                            <Entry Keyboard="Text"                 
+                                                   Placeholder="Escriba aqui las acciones"                 
+                                                   PlaceholderColor="#606052"                 
+                                                   MaxLength="100"                  
+                                                   BackgroundColor="#FFC803"                  
+                                                   Margin="0,30,0,0"                  
+                                                   TextColor="Black"                  
+                                                   FontSize="15"                 
+                                                   x:Name="F5A2"                  
+                                                   Text="{Binding Accion2Txt, Mode=TwoWay}"/>
+                                        </StackLayout>
+
+                                        <StackLayout Grid.Column="0" Grid.Row="3" Padding="5,40,45,0">
+                                            <Label Text="Fecha &#10;Compromiso:"                   
+                                                   TextColor="Black"                   
+                                                   FontSize="14.3"                   
+                                                   FontAttributes="Bold"/>
+                                        </StackLayout>
+
+                                        <StackLayout Grid.Column="1" Grid.Row="3" Padding="-29,0,50,0">
+                                            <Entry BackgroundColor="#FFC803"                   
+                                                   PlaceholderColor="#606052"                  
+                                                   MaxLength="100"                  
+                                                   Margin="0,30,0,0"                  
+                                                   FontSize="15"                   
+                                                   Placeholder="dd/MM/yyyy"                   
+                                                   TextColor="Black"                   
+                                                   x:Name="F5D2"                    
+                                                   Text="{Binding Fecha2Txt, Mode=TwoWay}"/>
+                                        </StackLayout>
+                                    </Grid>
+                                </StackLayout>
+
+                                <StackLayout>
+                                    <Grid Margin="5,1,0,0">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*"/>
+                                            <ColumnDefinition Width="280"/>
+                                        </Grid.ColumnDefinitions>
+
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="100"/>
+                                            <RowDefinition Height="50"/>
+                                            <RowDefinition Height="50"/>
+                                            <RowDefinition Height="*"/>
+                                        </Grid.RowDefinitions>
+
+                                        <StackLayout Grid.Column="0" Grid.Row="0" Padding="5,60,1,10">
+                                            <Label Text="Hallazgos:"        
+                                                   TextColor="Black"                       
+                                                   FontSize="17"                      
+                                                   FontAttributes="Bold"/>
+                                        </StackLayout>
+
+                                        <StackLayout Grid.Column="1" Grid.Row="0" Padding="-29,27,50,0">
+                                            <Editor Keyboard="Text"                       
+                                                    Placeholder="Escriba aqui los hallazgos"                       
+                                                    PlaceholderColor="#606052"                      
+                                                    MaxLength="250"                      
+                                                    BackgroundColor="#FFC803"                      
+                                                    TextColor="Black"                   
+                                                    FontSize="15"                      
+                                                    HeightRequest="97"                      
+                                                    x:Name="F5H3"                     
+                                                    Text="{Binding Hallaz3Txt, Mode=TwoWay}"/>
+                                        </StackLayout>
+
+                                        <StackLayout Grid.Column="0" Grid.Row="1" Padding="5,40,1,0">
+                                            <Label Text="Acciones:"      
+                                                   TextColor="Black"       
+                                                   FontSize="17"        
+                                                   FontAttributes="Bold"/>
+                                        </StackLayout>
+
+                                        <StackLayout Grid.Column="1" Grid.Row="1" Padding="-29,0,50,0">
+                                            <Entry Keyboard="Text"        
+                                                   Placeholder="Escriba aqui las acciones"    
+                                                   PlaceholderColor="#606052"     
+                                                   MaxLength="100"      
+                                                   BackgroundColor="#FFC803"       
+                                                   Margin="0,30,0,0"        
+                                                   TextColor="Black"         
+                                                   FontSize="15"      
+                                                   x:Name="F5A3"       
+                                                   Text="{Binding Accion3Txt, Mode=TwoWay}"/>
+                                        </StackLayout>
+
+                                        <StackLayout Grid.Column="0" Grid.Row="3" Padding="5,40,45,0">
+                                            <Label Text="Fecha &#10;Compromiso:"              
+                                                   TextColor="Black"              
+                                                   FontSize="14.3"              
+                                                   FontAttributes="Bold"/>
+                                        </StackLayout>
+
+                                        <StackLayout Grid.Column="1" Grid.Row="3" Padding="-29,0,50,0">
+                                            <Entry BackgroundColor="#FFC803"                 
+                                                   PlaceholderColor="#606052"                
+                                                   MaxLength="100"               
+                                                   Margin="0,30,0,0"                
+                                                   FontSize="15"              
+                                                   Placeholder="dd/MM/yyyy"              
+                                                   TextColor="Black"               
+                                                   x:Name="F5D3"             
+                                                   Text="{Binding Fecha3Txt, Mode=TwoWay}"/>
+                                        </StackLayout>
+
+                                    </Grid>
+                                </StackLayout>
+
+                                <StackLayout>
+                                    <Grid Margin="5,1,0,0">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*"/>
+                                            <ColumnDefinition Width="280"/>
+                                        </Grid.ColumnDefinitions>
+
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="100"/>
+                                            <RowDefinition Height="50"/>
+                                            <RowDefinition Height="50"/>
+                                            <RowDefinition Height="*"/>
+                                        </Grid.RowDefinitions>
+
+                                        <StackLayout Grid.Column="0" Grid.Row="0" Padding="5,60,1,10">
+                                            <Label Text="Hallazgos:"      
+                                                   TextColor="Black"     
+                                                   FontSize="17"      
+                                                   FontAttributes="Bold"/>
+                                        </StackLayout>
+
+                                        <StackLayout Grid.Column="1" Grid.Row="0" Padding="-29,27,50,0">
+                                            <Editor Keyboard="Text"       
+                                                    Placeholder="Escriba aqui los hallazgos"      
+                                                    PlaceholderColor="#606052"      
+                                                    MaxLength="250"       
+                                                    BackgroundColor="#FFC803"       
+                                                    TextColor="Black"      
+                                                    FontSize="15"        
+                                                    HeightRequest="97"       
+                                                    x:Name="F5H4"     
+                                                    Text="{Binding Hallaz4Txt, Mode=TwoWay}"/>
+                                        </StackLayout>
+
+                                        <StackLayout Grid.Column="0" Grid.Row="1" Padding="5,40,1,0">
+                                            <Label Text="Acciones:"     
+                                                   TextColor="Black"                    
+                                                   FontSize="17"           
+                                                   FontAttributes="Bold"/>
+                                        </StackLayout>
+
+                                        <StackLayout Grid.Column="1" Grid.Row="1" Padding="-29,0,50,0">
+                                            <Entry Keyboard="Text"               
+                                                   Placeholder="Escriba aqui las acciones"                
+                                                   PlaceholderColor="#606052"       
+                                                   MaxLength="100"       
+                                                   BackgroundColor="#FFC803"     
+                                                   Margin="0,30,0,0"             
+                                                   TextColor="Black"              
+                                                   FontSize="15"              
+                                                   x:Name="F5A4"              
+                                                   Text="{Binding Accion4Txt, Mode=TwoWay}"/>
+                                        </StackLayout>
+
+                                        <StackLayout Grid.Column="0" Grid.Row="3" Padding="5,40,45,0">
+                                            <Label Text="Fecha &#10;Compromiso:"            
+                                                   TextColor="Black"           
+                                                   FontSize="14.3"          
+                                                   FontAttributes="Bold"/>
+                                        </StackLayout>
+
+                                        <StackLayout Grid.Column="1" Grid.Row="3" Padding="-29,0,50,0">
+                                            <Entry BackgroundColor="#FFC803"              
+                                                   PlaceholderColor="#606052"              
+                                                   MaxLength="100"              
+                                                   Margin="0,30,0,0"             
+                                                   FontSize="15"             
+                                                   Placeholder="dd/MM/yyyy"             
+                                                   TextColor="Black"              
+                                                   x:Name="F5D4"              
+                                                   Text="{Binding Fecha4Txt, Mode=TwoWay}"/>
+                                        </StackLayout>
+
+                                    </Grid>
+                                </StackLayout>
+
+                                <StackLayout>
+                                    <Grid Margin="5,1,0,0">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*"/>
+                                            <ColumnDefinition Width="280"/>
+                                        </Grid.ColumnDefinitions>
+
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="100"/>
+                                            <RowDefinition Height="50"/>
+                                            <RowDefinition Height="50"/>
+                                            <RowDefinition Height="*"/>
+                                        </Grid.RowDefinitions>
+
+                                        <StackLayout Grid.Column="0" Grid.Row="0" Padding="5,60,1,10">
+                                            <Label Text="Hallazgos:"                  
+                                                   TextColor="Black"                 
+                                                   FontSize="17"                 
+                                                   FontAttributes="Bold"/>
+                                        </StackLayout>
+
+                                        <StackLayout Grid.Column="1" Grid.Row="0" Padding="-29,27,50,0">
+                                            <Editor Keyboard="Text"                    
+                                                    Placeholder="Escriba aqui los hallazgos"                   
+                                                    PlaceholderColor="#606052"               
+                                                    MaxLength="250"            
+                                                    BackgroundColor="#FFC803"             
+                                                    TextColor="Black"              
+                                                    FontSize="15"                   
+                                                    HeightRequest="97"                  
+                                                    x:Name="F5H5"                 
+                                                    Text="{Binding Hallaz5Txt, Mode=TwoWay}"/>
+                                        </StackLayout>
+
+                                        <StackLayout Grid.Column="0" Grid.Row="1" Padding="5,40,1,0">
+                                            <Label Text="Acciones:"    
+                                                   TextColor="Black"     
+                                                   FontSize="17"         
+                                                   FontAttributes="Bold"/>
+                                        </StackLayout>
+
+                                        <StackLayout Grid.Column="1" Grid.Row="1" Padding="-29,0,50,0">
+                                            <Entry Keyboard="Text"        
+                                                   Placeholder="Escriba aqui las acciones"         
+                                                   PlaceholderColor="#606052"         
+                                                   MaxLength="100"       
+                                                   BackgroundColor="#FFC803"        
+                                                   Margin="0,30,0,0"       
+                                                   TextColor="Black"        
+                                                   FontSize="15"        
+                                                   x:Name="F5A5"            
+                                                   Text="{Binding Accion5Txt, Mode=TwoWay}"/>
+                                        </StackLayout>
+
+                                        <StackLayout Grid.Column="0" Grid.Row="3" Padding="5,40,45,0">
+                                            <Label Text="Fecha &#10;Compromiso:"                   
+                                                   TextColor="Black"        
+                                                   FontSize="14.3"          
+                                                   FontAttributes="Bold"/>
+                                        </StackLayout>
+
+                                        <StackLayout Grid.Column="1" Grid.Row="3" Padding="-29,0,50,0">
+                                            <Entry BackgroundColor="#FFC803"         
+                                                   PlaceholderColor="#606052"         
+                                                   MaxLength="100"          
+                                                   Margin="0,30,0,0"          
+                                                   FontSize="15"          
+                                                   Placeholder="dd/MM/yyyy"           
+                                                   TextColor="Black"           
+                                                   x:Name="F5D5"            
+                                                   Text="{Binding Fecha5Txt, Mode=TwoWay}"/>
+                                        </StackLayout>
+
+                                    </Grid>
+                                </StackLayout>
+                            </StackLayout>
+                        </ScrollView>
+                    </StackLayout>
+                </StackLayout>
+
+                <StackLayout Padding="15,20,15,40" Margin="0,-50,0,0">
+                    <Button Text="Cargar resultados"       
+                            WidthRequest="250"    
+                            HeightRequest="55"   
+                            BackgroundColor="#FFC803"   
+                            FontAttributes="Bold"    
+                            FontSize="20"    
+                            VerticalOptions="Center"    
+                            HorizontalOptions="Center"     
+                            TextColor="Black"    
+                            CornerRadius="40"     
+                            Clicked="Result_Clicked"/>
+                </StackLayout>
+
+                <StackLayout Padding="15,20,15,40" Margin="0,-40,0,0">
+                    <Button Text="Enviar Auditoria"  
+                            WidthRequest="250"   
+                            HeightRequest="55"   
+                            BackgroundColor="#FFC803"   
+                            FontAttributes="Bold"     
+                            FontSize="20"      
+                            VerticalOptions="Center"      
+                            HorizontalOptions="Center"      
+                            TextColor="Black"      
+                            CornerRadius="40"      
+                            Command="{Binding InsertCommand}"/>
+                </StackLayout>
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

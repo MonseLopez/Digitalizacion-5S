@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Digitalizacion5S.View.Resultados"
+             Title="MIS ÁREAS"
+             BackgroundColor="#FCFCD7">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame Padding="0,20,0,20" Margin="20,25,20,0" BackgroundColor="#75F94D" HasShadow="true">
+                <StackLayout Orientation="Vertical">
+
+                    <Label Text="Oficina Lean Manufacturing"
+                           HorizontalOptions="CenterAndExpand"
+                           TextColor="Black"
+                           FontAttributes="Bold"
+                           FontSize="20"
+                           Padding="0,0,0,20"/>
+
+                    <Frame Padding="0,10,0,10" Margin="15,5,15,5">
+                        <StackLayout Orientation="Horizontal">
+                            <Label Text="Calificación:"
+                                    VerticalOptions="StartAndExpand"
+                                    HorizontalOptions="StartAndExpand"
+                                    Padding="25,0,0,0"
+                                    TextColor="Black"
+                                    FontAttributes="Bold"/>
+
+                            <Label Text="5.0"
+                                    VerticalOptions="StartAndExpand"
+                                    HorizontalOptions="EndAndExpand"
+                                    Padding="0,0,25,0"
+                                    TextColor="Black"
+                                    FontAttributes="Bold"/>
+                        </StackLayout>
+                    </Frame>
+
+                    <Frame Padding="0,10,0,10" Margin="15,5,15,5">
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Hallazgos:"
+                               VerticalOptions="StartAndExpand"
+                               HorizontalOptions="StartAndExpand"
+                               Padding="25,0,0,0"
+                               TextColor="Black"
+                               FontAttributes="Bold"/>
+
+                        <Label Text="0"
+                               VerticalOptions="StartAndExpand"
+                               HorizontalOptions="EndAndExpand"
+                               Padding="0,0,25,0"
+                               TextColor="Black"
+                               FontAttributes="Bold"/>
+                    </StackLayout>
+                    </Frame>
+
+                    <Button Text="Ver mas" 
+                            HorizontalOptions="CenterAndExpand"
+                            BackgroundColor="Black"
+                            TextColor="#FFC803"
+                            FontAttributes="Bold"/>
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

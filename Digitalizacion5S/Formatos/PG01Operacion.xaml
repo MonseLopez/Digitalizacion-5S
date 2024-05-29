@@ -1,0 +1,2006 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Digitalizacion5S.Formatos.PG01Operacion"
+             BackgroundColor="#D7EBB7"
+             Title="Áreas de Operación">
+    <ContentPage.Content>
+        <!--Titulo y area del formato-->
+        <ScrollView>
+            <StackLayout>
+                <Grid>
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <StackLayout Grid.Column="0" Grid.Row="0" BackgroundColor="#FFC803">
+                        <Label Text="Evaluación   5'S"
+                               VerticalOptions="CenterAndExpand" 
+                               HorizontalOptions="CenterAndExpand" 
+                               FontSize="25"
+                               HorizontalTextAlignment="Center"
+                               FontAttributes="Bold"
+                               TextColor="Black"/>
+                    </StackLayout>
+
+                    <StackLayout Grid.Column="1" Grid.Row="0" BackgroundColor="#FFC803">
+                        <Label Text="Areas de operación en planta"
+                               VerticalOptions="CenterAndExpand" 
+                               HorizontalOptions="CenterAndExpand" 
+                               FontSize="25"
+                               HorizontalTextAlignment="Center"
+                               FontAttributes="Bold"
+                               TextColor="Black"/>
+                    </StackLayout>
+
+                </Grid>
+
+                <StackLayout>
+                    <Label Text="La presente evaluación esta basada en el cumplimiento a los criterios y/o estandares establecidos en el instructivo de 5S (SG-IT-04) y a la normatividad aplicable en el RIT y RSI. El Criterio de evaluación es por S. Se requiere al menos 0.50 puntos para acreditar la primer y cuarta  'S' y 0.75 puntos para acreditar la segunda y tercer 'S'.  Los hallazgos se registran en el apartado correspondiente definiendo acción a implementar, responsable y fecha compromiso y se deberán cerrar en maximo 3 días a partir de la fecha de auditoria."
+                           TextColor="Black"
+                           FontSize="11"
+                           Padding="10,0,10,0"/>
+                </StackLayout>
+
+                <!--Primera "S" (Seleccionar)-->
+                <StackLayout>
+                    <StackLayout BackgroundColor="#FFC803">
+                        <Label Text="1S. Seleccionar"
+                               VerticalOptions="CenterAndExpand"
+                               HorizontalOptions="CenterAndExpand"
+                               TextColor="Black"
+                               FontAttributes="Bold"
+                               FontSize="30"/>
+                    </StackLayout>
+
+                    <!--Inicio del formulario-->
+                    <StackLayout>
+                        <Label Text="1.- ¿En el area de trabajo se encuentra solo lo necesario? Solo elementos o articulos acordes a las funciones del área. Incluye lo contenido en gavetas, cajones, gabinetes, estantes, tableros de control, mesas de trabajo, mesas; de inspección, cajas de herramientas, racks, etc.&#10;NOTA: No se permiten loncheras, mochilas, comida, botanas, ropa, trapos sucios, botellas con liquidos sin identificar, refrescos, articulos personales."
+                               FontAttributes="Bold"
+                               Padding="15,10,15,0"
+                               TextColor="Black"/>
+
+                        <StackLayout Padding="15,0,15,15">
+                            <RadioButton x:Name="C1F1S1" GroupName="P1F1S1" Content="Cumple"
+                                         BackgroundColor="#FFC803" 
+                                         TextColor="Black"
+                                         CornerRadius="30"/>
+
+                            <RadioButton x:Name="NC1F1S1" GroupName="P1F1S1" Content="No Cumple"
+                                         BackgroundColor="#FFC803" 
+                                         TextColor="Black"
+                                         CornerRadius="30"/>
+
+                            <RadioButton x:Name="NA1F1S1" GroupName="P1F1S1" Content="No Aplica"
+                                         BackgroundColor="#FFC803" 
+                                         TextColor="Black"
+                                         CornerRadius="30"/>
+                        </StackLayout>
+
+                        <Label Text="2.- ¿La información que se encuentra disponible en el área se encuentra vigente? &#10;NOTA: Incluye información de: Tableros hr x hr, pizarrones, carpetas, señaleticas, identificaciones, lonas, programas o archivos electronicos, etc."
+                               FontAttributes="Bold"
+                               Padding="15,10,15,0"
+                               TextColor="Black"/>
+
+                        <StackLayout Padding="15,0,15,15">
+                            <RadioButton x:Name="C2F1S1" GroupName="P2F1S1" Content="Cumple"
+                                         BackgroundColor="#FFC803" 
+                                         TextColor="Black"
+                                         CornerRadius="30"/>
+
+                            <RadioButton x:Name="NC2F1S1" GroupName="P2F1S1" Content="No Cumple"
+                                         BackgroundColor="#FFC803" 
+                                         TextColor="Black"
+                                         CornerRadius="30"/>
+
+                            <RadioButton x:Name="NA2F1S1" GroupName="P2F1S1" Content="No Aplica"
+                                         BackgroundColor="#FFC803" 
+                                         TextColor="Black"
+                                         CornerRadius="30"/>
+                        </StackLayout>
+
+                        <!--Sección de hallazgos-->
+                        <StackLayout BackgroundColor="#FFC803" Padding="0,10,0,10" Margin="0,10,0,-16">
+                            <Label Text="Hallazgos"
+                               VerticalOptions="CenterAndExpand"
+                               HorizontalOptions="CenterAndExpand"
+                               TextColor="Black"
+                               FontAttributes="Bold"
+                               FontSize="30"/>
+                        </StackLayout>
+
+                        <ScrollView Orientation="Horizontal">
+                            <StackLayout Orientation="Horizontal">
+                                <StackLayout>
+                                    <Grid Margin="5,1,0,0">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*"/>
+                                            <ColumnDefinition Width="280"/>
+                                        </Grid.ColumnDefinitions>
+
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="100"/>
+                                            <RowDefinition Height="50"/>
+                                            <RowDefinition Height="50"/>
+                                        </Grid.RowDefinitions>
+
+                                        <StackLayout Grid.Column="0" Grid.Row="0" Padding="5,60,1,10">
+                                            <Label Text="Hallazgos:"                           
+                                                   TextColor="Black"
+                                                   FontSize="17"
+                                                   FontAttributes="Bold"/>
+                                        </StackLayout>
+
+                                        <StackLayout Grid.Column="1" Grid.Row="0" Padding="-29,27,50,0">
+                                            <Editor Keyboard="Text"  
+                                                    Placeholder="Escriba aqui los hallazgos"   
+                                                    PlaceholderColor="#606052" 
+                                                    MaxLength="250"   
+                                                    BackgroundColor="#FFC803" 
+                                                    TextColor="Black"   
+                                                    FontSize="15"    
+                                                    HeightRequest="97"     
+                                                    x:Name="F1H1S1"    
+                                                    Text="{Binding Hallaz1S1Txt, Mode=TwoWay}"/>
+                                        </StackLayout>
+
+                                        <StackLayout Grid.Column="0" Grid.Row="1" Padding="5,40,1,0">
+                                            <Label Text="Acciones:"    
+                                                   TextColor="Black"       
+                                                   FontSize="17"          
+                                                   FontAttributes="Bold"/>
+                                        </StackLayout>
+
+                                        <StackLayout Grid.Column="1" Grid.Row="1" Padding="-29,0,50,0">
+                                            <Entry Keyboard="Text"           
+                                                   Placeholder="Escriba aqui las acciones"         
+                                                   PlaceholderColor="#606052"   
+                                                   MaxLength="100"         
+                                                   BackgroundColor="#FFC803"                 
+                                                   Margin="0,30,0,0"                 
+                                                   TextColor="Black"                 
+                                                   FontSize="15"                     
+                                                   Text="{Binding Accion1S1Txt, Mode=TwoWay}"/>
+                                        </StackLayout>
+
+                                        <StackLayout Grid.Column="0" Grid.Row="2" Padding="5,40,45,0">
+                                            <Label Text="Fecha &#10;Compromiso:"                       
+                                                   TextColor="Black"            
+                                                   FontSize="14.3"          
+                                                   FontAttributes="Bold"/>
+                                        </StackLayout>
+
+                                        <StackLayout Grid.Column="1" Grid.Row="2" Padding="-29,0,50,0">
+                                            <DatePicker BackgroundColor="#FFC803"
+                                                        MinimumDate="01/01/2024"
+                                                        MaximumDate="12/31/2999"
+                                                        Margin="0,30,0,0"
+                                                        FontSize="15"
+                                                        TextColor="Black"                  
+                                                        Date="{Binding Fecha1S1Txt, Mode=TwoWay}"/>
+                                        </StackLayout>
+
+                                    </Grid>
+                                </StackLayout>
+
+                                <StackLayout>
+                                    <Grid Margin="5,1,0,0">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*"/>
+                                            <ColumnDefinition Width="280"/>
+                                        </Grid.ColumnDefinitions>
+
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="100"/>
+                                            <RowDefinition Height="50"/>
+                                            <RowDefinition Height="50"/>
+                                            <RowDefinition Height="*"/>
+                                        </Grid.RowDefinitions>
+
+                                        <StackLayout Grid.Column="0" Grid.Row="0" Padding="5,60,1,10">
+                                            <Label Text="Hallazgos:" 
+                                                   TextColor="Black"
+                                                   FontSize="17"
+                                                   FontAttributes="Bold"/>
+                                        </StackLayout>
+
+                                        <StackLayout Grid.Column="1" Grid.Row="0" Padding="-29,27,50,0">
+                                            <Editor Keyboard="Text" 
+                                                    Placeholder="Escriba aqui los hallazgos" 
+                                                    PlaceholderColor="#606052"
+                                                    MaxLength="250"
+                                                    BackgroundColor="#FFC803"
+                                                    TextColor="Black"
+                                                    FontSize="15"
+                                                    HeightRequest="97"
+                                                    x:Name="F1H2S1"
+                                                    Text="{Binding Hallaz2S1Txt, Mode=TwoWay}"/>
+                                        </StackLayout>
+
+                                        <StackLayout Grid.Column="0" Grid.Row="1" Padding="5,40,1,0">
+                                            <Label Text="Acciones:"                 
+                                                   TextColor="Black"                
+                                                   FontSize="17"                
+                                                   FontAttributes="Bold"/>
+                                        </StackLayout>
+
+                                        <StackLayout Grid.Column="1" Grid.Row="1" Padding="-29,0,50,0">
+                                            <Entry Keyboard="Text"                 
+                                                   Placeholder="Escriba aqui las acciones"                 
+                                                   PlaceholderColor="#606052"                 
+                                                   MaxLength="100"                  
+                                                   BackgroundColor="#FFC803"                  
+                                                   Margin="0,30,0,0"                  
+                                                   TextColor="Black"                  
+                                                   FontSize="15"                     
+                                                   Text="{Binding Accion2S1Txt, Mode=TwoWay}"/>
+                                        </StackLayout>
+
+                                        <StackLayout Grid.Column="0" Grid.Row="3" Padding="5,40,45,0">
+                                            <Label Text="Fecha &#10;Compromiso:"                   
+                                                   TextColor="Black"                   
+                                                   FontSize="14.3"                   
+                                                   FontAttributes="Bold"/>
+                                        </StackLayout>
+
+                                        <StackLayout Grid.Column="1" Grid.Row="3" Padding="-29,0,50,0">
+                                            <DatePicker BackgroundColor="#FFC803"
+                                                        MinimumDate="01/01/2024"
+                                                        MaximumDate="12/31/2999"
+                                                        Margin="0,30,0,0"
+                                                        FontSize="15"
+                                                        TextColor="Black"
+                                                        Date="{Binding Fecha2S1Txt, Mode=TwoWay}"/>
+                                        </StackLayout>
+                                    </Grid>
+                                </StackLayout>
+
+                                <StackLayout>
+                                    <Grid Margin="5,1,0,0">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*"/>
+                                            <ColumnDefinition Width="280"/>
+                                        </Grid.ColumnDefinitions>
+
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="100"/>
+                                            <RowDefinition Height="50"/>
+                                            <RowDefinition Height="50"/>
+                                            <RowDefinition Height="*"/>
+                                        </Grid.RowDefinitions>
+
+                                        <StackLayout Grid.Column="0" Grid.Row="0" Padding="5,60,1,10">
+                                            <Label Text="Hallazgos:"        
+                                                   TextColor="Black"                       
+                                                   FontSize="17"                      
+                                                   FontAttributes="Bold"/>
+                                        </StackLayout>
+
+                                        <StackLayout Grid.Column="1" Grid.Row="0" Padding="-29,27,50,0">
+                                            <Editor Keyboard="Text"                       
+                                                    Placeholder="Escriba aqui los hallazgos"                       
+                                                    PlaceholderColor="#606052"                      
+                                                    MaxLength="250"                      
+                                                    BackgroundColor="#FFC803"                      
+                                                    TextColor="Black"                   
+                                                    FontSize="15"                      
+                                                    HeightRequest="97"                      
+                                                    x:Name="F1H3S1"                     
+                                                    Text="{Binding Hallaz3S1Txt, Mode=TwoWay}"/>
+                                        </StackLayout>
+
+                                        <StackLayout Grid.Column="0" Grid.Row="1" Padding="5,40,1,0">
+                                            <Label Text="Acciones:"      
+                                                   TextColor="Black"       
+                                                   FontSize="17"        
+                                                   FontAttributes="Bold"/>
+                                        </StackLayout>
+
+                                        <StackLayout Grid.Column="1" Grid.Row="1" Padding="-29,0,50,0">
+                                            <Entry Keyboard="Text"        
+                                                   Placeholder="Escriba aqui las acciones"    
+                                                   PlaceholderColor="#606052"     
+                                                   MaxLength="100"      
+                                                   BackgroundColor="#FFC803"       
+                                                   Margin="0,30,0,0"        
+                                                   TextColor="Black"         
+                                                   FontSize="15"        
+                                                   Text="{Binding Accion3S1Txt, Mode=TwoWay}"/>
+                                        </StackLayout>
+
+                                        <StackLayout Grid.Column="0" Grid.Row="3" Padding="5,40,45,0">
+                                            <Label Text="Fecha &#10;Compromiso:"              
+                                                   TextColor="Black"              
+                                                   FontSize="14.3"              
+                                                   FontAttributes="Bold"/>
+                                        </StackLayout>
+
+                                        <StackLayout Grid.Column="1" Grid.Row="3" Padding="-29,0,50,0">
+                                            <DatePicker BackgroundColor="#FFC803"
+                                                        MinimumDate="01/01/2024"
+                                                        MaximumDate="12/31/2999"
+                                                        Margin="0,30,0,0"
+                                                        FontSize="15"
+                                                        TextColor="Black"
+                                                        Date="{Binding Fecha3S1Txt, Mode=TwoWay}"/>
+                                        </StackLayout>
+
+                                    </Grid>
+                                </StackLayout>
+
+                                <StackLayout>
+                                    <Grid Margin="5,1,0,0">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*"/>
+                                            <ColumnDefinition Width="280"/>
+                                        </Grid.ColumnDefinitions>
+
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="100"/>
+                                            <RowDefinition Height="50"/>
+                                            <RowDefinition Height="50"/>
+                                            <RowDefinition Height="*"/>
+                                        </Grid.RowDefinitions>
+
+                                        <StackLayout Grid.Column="0" Grid.Row="0" Padding="5,60,1,10">
+                                            <Label Text="Hallazgos:"      
+                                                   TextColor="Black"     
+                                                   FontSize="17"      
+                                                   FontAttributes="Bold"/>
+                                        </StackLayout>
+
+                                        <StackLayout Grid.Column="1" Grid.Row="0" Padding="-29,27,50,0">
+                                            <Editor Keyboard="Text"       
+                                                    Placeholder="Escriba aqui los hallazgos"      
+                                                    PlaceholderColor="#606052"      
+                                                    MaxLength="250"       
+                                                    BackgroundColor="#FFC803"       
+                                                    TextColor="Black"      
+                                                    FontSize="15"        
+                                                    HeightRequest="97"       
+                                                    x:Name="F1H4S1"     
+                                                    Text="{Binding Hallaz4S1Txt, Mode=TwoWay}"/>
+                                        </StackLayout>
+
+                                        <StackLayout Grid.Column="0" Grid.Row="1" Padding="5,40,1,0">
+                                            <Label Text="Acciones:"     
+                                                   TextColor="Black"                    
+                                                   FontSize="17"           
+                                                   FontAttributes="Bold"/>
+                                        </StackLayout>
+
+                                        <StackLayout Grid.Column="1" Grid.Row="1" Padding="-29,0,50,0">
+                                            <Entry Keyboard="Text"               
+                                                   Placeholder="Escriba aqui las acciones"                
+                                                   PlaceholderColor="#606052"       
+                                                   MaxLength="100"       
+                                                   BackgroundColor="#FFC803"     
+                                                   Margin="0,30,0,0"             
+                                                   TextColor="Black"              
+                                                   FontSize="15"                
+                                                   Text="{Binding Accion4S1Txt, Mode=TwoWay}"/>
+                                        </StackLayout>
+
+                                        <StackLayout Grid.Column="0" Grid.Row="3" Padding="5,40,45,0">
+                                            <Label Text="Fecha &#10;Compromiso:"            
+                                                   TextColor="Black"           
+                                                   FontSize="14.3"          
+                                                   FontAttributes="Bold"/>
+                                        </StackLayout>
+
+                                        <StackLayout Grid.Column="1" Grid.Row="3" Padding="-29,0,50,0">
+                                            <DatePicker BackgroundColor="#FFC803"
+                                                        MinimumDate="01/01/2024"
+                                                        MaximumDate="12/31/2999"
+                                                        Margin="0,30,0,0"
+                                                        FontSize="15"
+                                                        TextColor="Black"
+                                                        Date="{Binding Fecha4S1Txt, Mode=TwoWay}"/>
+                                        </StackLayout>
+
+                                    </Grid>
+                                </StackLayout>
+                            </StackLayout>
+                        </ScrollView>
+                    </StackLayout>
+                </StackLayout>
+
+                <!--Segunda "S" (Ordenar)-->
+                <StackLayout>
+                    <StackLayout Margin="0,40,0,0" BackgroundColor="#FFC803">
+                        <Label Text="2S. Ordenar"
+                               VerticalOptions="CenterAndExpand"
+                               HorizontalOptions="CenterAndExpand"
+                               TextColor="Black"
+                               FontAttributes="Bold"
+                               FontSize="30"/>
+                    </StackLayout>
+
+                    <StackLayout>
+                        <Label Text="1.- Los articulos seleccionados como necesarios en la 1era 'S' para realizar el trabajo tienen un lugar asignado, se encuentran identificados de manera correcta y delimitados segun sea el caso. &#10;NOTA: Debe obsrevarse el uso de etiquetas circulares amarillas, kaisen foam, rotulos, sombras, etiquetas de identificación, cintas de marcaje, señaliticas, etc."
+                               FontAttributes="Bold"
+                               Padding="15,10,15,0"
+                               TextColor="Black"/>
+
+                        <StackLayout Padding="15,0,15,15">
+                            <RadioButton x:Name="C1F1S2" GroupName="P1F1S2" Content="Cumple"
+                                         BackgroundColor="#FFC803" 
+                                         TextColor="Black"
+                                         CornerRadius="30"/>
+
+                            <RadioButton x:Name="NC1F1S2" GroupName="P1F1S2" Content="No Cumple"
+                                         BackgroundColor="#FFC803" 
+                                         TextColor="Black"
+                                         CornerRadius="30"/>
+
+                            <RadioButton x:Name="NA1F1S2" GroupName="P1F1S2" Content="No Aplica"
+                                         BackgroundColor="#FFC803" 
+                                         TextColor="Black"
+                                         CornerRadius="30"/>
+                        </StackLayout>
+
+                        <Label Text="2.- ¿Los pasillos y/o areas operativas se encuentras libres de obstaculos y estan delimitados acorde al estandar establecido? &#10;NOTA: Se debe observar el uso correcto de los colores establecidos para cada tipo de area."
+                               FontAttributes="Bold"
+                               Padding="15,10,15,0"
+                               TextColor="Black"/>
+
+                        <StackLayout Padding="15,0,15,15">
+                            <RadioButton x:Name="C2F1S2" GroupName="P2F1S2" Content="Cumple"
+                                         BackgroundColor="#FFC803" 
+                                         TextColor="Black"
+                                         CornerRadius="30"/>
+
+                            <RadioButton x:Name="NC2F1S2" GroupName="P2F1S2" Content="No Cumple"
+                                         BackgroundColor="#FFC803" 
+                                         TextColor="Black"
+                                         CornerRadius="30"/>
+
+                            <RadioButton x:Name="NA2F1S2" GroupName="P2F1S2" Content="No Aplica"
+                                         BackgroundColor="#FFC803" 
+                                         TextColor="Black"
+                                         CornerRadius="30"/>
+                        </StackLayout>
+
+                        <Label Text="3.- ¿Segun sea el caso para el material que se encuentre en el área, ya sea materia prima, producto en proceso, producto terminado, chatarra, segundas, este tiene un lugar asignado y se encuentran identificando de manera correcta?&#10;NOTA: Se debe observar el uso correcto de los colores establecidos para las delimitaciones asi como ubicación correcta en layout"
+                               FontAttributes="Bold"
+                               Padding="15,10,15,0"
+                               TextColor="Black"/>
+
+                        <StackLayout Padding="15,0,15,15">
+                            <RadioButton x:Name="C3F1S2" GroupName="P3F1S2" Content="Cumple"
+                                         BackgroundColor="#FFC803" 
+                                         TextColor="Black"
+                                         CornerRadius="30"/>
+
+                            <RadioButton x:Name="NC3F1S2" GroupName="P3F1S2" Content="No Cumple"
+                                         BackgroundColor="#FFC803" 
+                                         TextColor="Black"
+                                         CornerRadius="30"/>
+
+                            <RadioButton x:Name="NA3F1S2" GroupName="P3F1S2" Content="No Aplica"
+                                         BackgroundColor="#FFC803" 
+                                         TextColor="Black"
+                                         CornerRadius="30"/>
+                        </StackLayout>
+
+                        <Label Text="4.- ¿Los elementos de administración visual como señaliticas, tableros, pizzarones, letreros, etc; se encuentran en buenas condiciones? &#10;NOTA: No deben estar rotos, no sucios y bien instalados"
+                               FontAttributes="Bold"
+                               Padding="15,10,15,0"
+                               TextColor="Black"/>
+
+                        <StackLayout Padding="15,0,15,15">
+                            <RadioButton x:Name="C4F1S2" GroupName="P4F1S2" Content="Cumple"
+                                         BackgroundColor="#FFC803" 
+                                         TextColor="Black"
+                                         CornerRadius="30"/>
+
+                            <RadioButton x:Name="NC4F1S2" GroupName="P4F1S2" Content="No Cumple"
+                                         BackgroundColor="#FFC803" 
+                                         TextColor="Black"
+                                         CornerRadius="30"/>
+
+                            <RadioButton x:Name="NA4F1S2" GroupName="P4F1S2" Content="No Aplica"
+                                         BackgroundColor="#FFC803" 
+                                         TextColor="Black"
+                                         CornerRadius="30"/>
+                        </StackLayout>
+
+                        <!--Sección de hallazgos-->
+                        <StackLayout BackgroundColor="#FFC803" Padding="0,10,0,10" Margin="0,10,0,-16">
+                            <Label Text="Hallazgos"
+                                   VerticalOptions="CenterAndExpand"
+                                   HorizontalOptions="CenterAndExpand"
+                                   TextColor="Black"
+                                   FontAttributes="Bold"
+                                   FontSize="30"/>
+                        </StackLayout>
+
+                        <ScrollView Orientation="Horizontal">
+                            <StackLayout Orientation="Horizontal">
+                                <StackLayout>
+                                    <Grid Margin="5,1,0,0">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*"/>
+                                            <ColumnDefinition Width="280"/>
+                                        </Grid.ColumnDefinitions>
+
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="100"/>
+                                            <RowDefinition Height="50"/>
+                                            <RowDefinition Height="50"/>
+                                        </Grid.RowDefinitions>
+
+                                        <StackLayout Grid.Column="0" Grid.Row="0" Padding="5,60,1,10">
+                                            <Label Text="Hallazgos:"                           
+                                                   TextColor="Black"
+                                                   FontSize="17"
+                                                   FontAttributes="Bold"/>
+                                        </StackLayout>
+
+                                        <StackLayout Grid.Column="1" Grid.Row="0" Padding="-29,27,50,0">
+                                            <Editor Keyboard="Text"  
+                                                    Placeholder="Escriba aqui los hallazgos"   
+                                                    PlaceholderColor="#606052" 
+                                                    MaxLength="250"   
+                                                    BackgroundColor="#FFC803" 
+                                                    TextColor="Black"   
+                                                    FontSize="15"    
+                                                    HeightRequest="97"     
+                                                    x:Name="F1H1S2"    
+                                                    Text="{Binding Hallaz1S2Txt, Mode=TwoWay}"/>
+                                        </StackLayout>
+
+                                        <StackLayout Grid.Column="0" Grid.Row="1" Padding="5,40,1,0">
+                                            <Label Text="Acciones:"    
+                                                   TextColor="Black"       
+                                                   FontSize="17"          
+                                                   FontAttributes="Bold"/>
+                                        </StackLayout>
+
+                                        <StackLayout Grid.Column="1" Grid.Row="1" Padding="-29,0,50,0">
+                                            <Entry Keyboard="Text"           
+                                                   Placeholder="Escriba aqui las acciones"         
+                                                   PlaceholderColor="#606052"   
+                                                   MaxLength="100"         
+                                                   BackgroundColor="#FFC803"                 
+                                                   Margin="0,30,0,0"                 
+                                                   TextColor="Black"                 
+                                                   FontSize="15"                  
+                                                   x:Name="F3A1"                   
+                                                   Text="{Binding Accion1S2Txt, Mode=TwoWay}"/>
+                                        </StackLayout>
+
+                                        <StackLayout Grid.Column="0" Grid.Row="2" Padding="5,40,45,0">
+                                            <Label Text="Fecha &#10;Compromiso:"                       
+                                                   TextColor="Black"            
+                                                   FontSize="14.3"          
+                                                   FontAttributes="Bold"/>
+                                        </StackLayout>
+
+                                        <StackLayout Grid.Column="1" Grid.Row="2" Padding="-29,0,50,0">
+                                            <DatePicker BackgroundColor="#FFC803"
+                                                        MinimumDate="01/01/2024"
+                                                        MaximumDate="12/31/2999"
+                                                        Margin="0,30,0,0"
+                                                        FontSize="15"
+                                                        TextColor="Black"
+                                                        Date="{Binding Fecha1S2Txt, Mode=TwoWay}"/>
+                                        </StackLayout>
+
+                                    </Grid>
+                                </StackLayout>
+
+                                <StackLayout>
+                                    <Grid Margin="5,1,0,0">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*"/>
+                                            <ColumnDefinition Width="280"/>
+                                        </Grid.ColumnDefinitions>
+
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="100"/>
+                                            <RowDefinition Height="50"/>
+                                            <RowDefinition Height="50"/>
+                                            <RowDefinition Height="*"/>
+                                        </Grid.RowDefinitions>
+
+                                        <StackLayout Grid.Column="0" Grid.Row="0" Padding="5,60,1,10">
+                                            <Label Text="Hallazgos:" 
+                                                   TextColor="Black"
+                                                   FontSize="17"
+                                                   FontAttributes="Bold"/>
+                                        </StackLayout>
+
+                                        <StackLayout Grid.Column="1" Grid.Row="0" Padding="-29,27,50,0">
+                                            <Editor Keyboard="Text" 
+                                                    Placeholder="Escriba aqui los hallazgos" 
+                                                    PlaceholderColor="#606052"
+                                                    MaxLength="250"
+                                                    BackgroundColor="#FFC803"
+                                                    TextColor="Black"
+                                                    FontSize="15"
+                                                    HeightRequest="97"
+                                                    x:Name="F1H2S2"
+                                                    Text="{Binding Hallaz2S2Txt, Mode=TwoWay}"/>
+                                        </StackLayout>
+
+                                        <StackLayout Grid.Column="0" Grid.Row="1" Padding="5,40,1,0">
+                                            <Label Text="Acciones:"                 
+                                                   TextColor="Black"                
+                                                   FontSize="17"                
+                                                   FontAttributes="Bold"/>
+                                        </StackLayout>
+
+                                        <StackLayout Grid.Column="1" Grid.Row="1" Padding="-29,0,50,0">
+                                            <Entry Keyboard="Text"                 
+                                                   Placeholder="Escriba aqui las acciones"                 
+                                                   PlaceholderColor="#606052"                 
+                                                   MaxLength="100"                  
+                                                   BackgroundColor="#FFC803"                  
+                                                   Margin="0,30,0,0"                  
+                                                   TextColor="Black"                  
+                                                   FontSize="15"                 
+                                                   x:Name="F3A2"                  
+                                                   Text="{Binding Accion2S2Txt, Mode=TwoWay}"/>
+                                        </StackLayout>
+
+                                        <StackLayout Grid.Column="0" Grid.Row="3" Padding="5,40,45,0">
+                                            <Label Text="Fecha &#10;Compromiso:"                   
+                                                   TextColor="Black"                   
+                                                   FontSize="14.3"                   
+                                                   FontAttributes="Bold"/>
+                                        </StackLayout>
+
+                                        <StackLayout Grid.Column="1" Grid.Row="3" Padding="-29,0,50,0">
+                                            <DatePicker BackgroundColor="#FFC803"
+                                                        MinimumDate="01/01/2024"
+                                                        MaximumDate="12/31/2999"
+                                                        Margin="0,30,0,0"
+                                                        FontSize="15"
+                                                        TextColor="Black"
+                                                        Date="{Binding Fecha2S2Txt, Mode=TwoWay}"/>
+                                        </StackLayout>
+                                    </Grid>
+                                </StackLayout>
+
+                                <StackLayout>
+                                    <Grid Margin="5,1,0,0">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*"/>
+                                            <ColumnDefinition Width="280"/>
+                                        </Grid.ColumnDefinitions>
+
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="100"/>
+                                            <RowDefinition Height="50"/>
+                                            <RowDefinition Height="50"/>
+                                            <RowDefinition Height="*"/>
+                                        </Grid.RowDefinitions>
+
+                                        <StackLayout Grid.Column="0" Grid.Row="0" Padding="5,60,1,10">
+                                            <Label Text="Hallazgos:"        
+                                                   TextColor="Black"                       
+                                                   FontSize="17"                      
+                                                   FontAttributes="Bold"/>
+                                        </StackLayout>
+
+                                        <StackLayout Grid.Column="1" Grid.Row="0" Padding="-29,27,50,0">
+                                            <Editor Keyboard="Text"                       
+                                                    Placeholder="Escriba aqui los hallazgos"                       
+                                                    PlaceholderColor="#606052"                      
+                                                    MaxLength="250"                      
+                                                    BackgroundColor="#FFC803"                      
+                                                    TextColor="Black"                   
+                                                    FontSize="15"                      
+                                                    HeightRequest="97"                      
+                                                    x:Name="F1H3S2"                     
+                                                    Text="{Binding Hallaz3S2Txt, Mode=TwoWay}"/>
+                                        </StackLayout>
+
+                                        <StackLayout Grid.Column="0" Grid.Row="1" Padding="5,40,1,0">
+                                            <Label Text="Acciones:"      
+                                                   TextColor="Black"       
+                                                   FontSize="17"        
+                                                   FontAttributes="Bold"/>
+                                        </StackLayout>
+
+                                        <StackLayout Grid.Column="1" Grid.Row="1" Padding="-29,0,50,0">
+                                            <Entry Keyboard="Text"        
+                                                   Placeholder="Escriba aqui las acciones"    
+                                                   PlaceholderColor="#606052"     
+                                                   MaxLength="100"      
+                                                   BackgroundColor="#FFC803"       
+                                                   Margin="0,30,0,0"        
+                                                   TextColor="Black"         
+                                                   FontSize="15"      
+                                                   x:Name="F3A3"       
+                                                   Text="{Binding Accion3S2Txt, Mode=TwoWay}"/>
+                                        </StackLayout>
+
+                                        <StackLayout Grid.Column="0" Grid.Row="3" Padding="5,40,45,0">
+                                            <Label Text="Fecha &#10;Compromiso:"              
+                                                   TextColor="Black"              
+                                                   FontSize="14.3"              
+                                                   FontAttributes="Bold"/>
+                                        </StackLayout>
+
+                                        <StackLayout Grid.Column="1" Grid.Row="3" Padding="-29,0,50,0">
+                                            <DatePicker BackgroundColor="#FFC803"
+                                                        MinimumDate="01/01/2024"
+                                                        MaximumDate="12/31/2999"
+                                                        Margin="0,30,0,0"
+                                                        FontSize="15"
+                                                        TextColor="Black"
+                                                        Date="{Binding Fecha3S2Txt, Mode=TwoWay}"/>
+                                        </StackLayout>
+
+                                    </Grid>
+                                </StackLayout>
+
+                                <StackLayout>
+                                    <Grid Margin="5,1,0,0">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*"/>
+                                            <ColumnDefinition Width="280"/>
+                                        </Grid.ColumnDefinitions>
+
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="100"/>
+                                            <RowDefinition Height="50"/>
+                                            <RowDefinition Height="50"/>
+                                            <RowDefinition Height="*"/>
+                                        </Grid.RowDefinitions>
+
+                                        <StackLayout Grid.Column="0" Grid.Row="0" Padding="5,60,1,10">
+                                            <Label Text="Hallazgos:"      
+                                                   TextColor="Black"     
+                                                   FontSize="17"      
+                                                   FontAttributes="Bold"/>
+                                        </StackLayout>
+
+                                        <StackLayout Grid.Column="1" Grid.Row="0" Padding="-29,27,50,0">
+                                            <Editor Keyboard="Text"       
+                                                    Placeholder="Escriba aqui los hallazgos"      
+                                                    PlaceholderColor="#606052"      
+                                                    MaxLength="250"       
+                                                    BackgroundColor="#FFC803"       
+                                                    TextColor="Black"      
+                                                    FontSize="15"        
+                                                    HeightRequest="97"       
+                                                    x:Name="F1H4S2"     
+                                                    Text="{Binding Hallaz4S2Txt, Mode=TwoWay}"/>
+                                        </StackLayout>
+
+                                        <StackLayout Grid.Column="0" Grid.Row="1" Padding="5,40,1,0">
+                                            <Label Text="Acciones:"     
+                                                   TextColor="Black"                    
+                                                   FontSize="17"           
+                                                   FontAttributes="Bold"/>
+                                        </StackLayout>
+
+                                        <StackLayout Grid.Column="1" Grid.Row="1" Padding="-29,0,50,0">
+                                            <Entry Keyboard="Text"               
+                                                   Placeholder="Escriba aqui las acciones"                
+                                                   PlaceholderColor="#606052"       
+                                                   MaxLength="100"       
+                                                   BackgroundColor="#FFC803"     
+                                                   Margin="0,30,0,0"             
+                                                   TextColor="Black"              
+                                                   FontSize="15"              
+                                                   x:Name="F3A4"              
+                                                   Text="{Binding Accion4S2Txt, Mode=TwoWay}"/>
+                                        </StackLayout>
+
+                                        <StackLayout Grid.Column="0" Grid.Row="3" Padding="5,40,45,0">
+                                            <Label Text="Fecha &#10;Compromiso:"            
+                                                   TextColor="Black"           
+                                                   FontSize="14.3"          
+                                                   FontAttributes="Bold"/>
+                                        </StackLayout>
+
+                                        <StackLayout Grid.Column="1" Grid.Row="3" Padding="-29,0,50,0">
+                                            <DatePicker BackgroundColor="#FFC803"
+                                                        MinimumDate="01/01/2024"
+                                                        MaximumDate="12/31/2999"
+                                                        Margin="0,30,0,0"
+                                                        FontSize="15"
+                                                        TextColor="Black"
+                                                        Date="{Binding Fecha4S2Txt, Mode=TwoWay}"/>
+                                        </StackLayout>
+
+                                    </Grid>
+                                </StackLayout>
+                            </StackLayout>
+                        </ScrollView>
+                    </StackLayout>
+                </StackLayout>
+
+                <!--Tercera "S" (Limpiar)-->
+                <StackLayout>
+                    <StackLayout Margin="0,40,0,0" BackgroundColor="#FFC803">
+                        <Label Text="3S. Limpiar/Inspeccionar"
+                               VerticalOptions="CenterAndExpand"
+                               HorizontalOptions="CenterAndExpand"
+                               TextColor="Black"
+                               FontAttributes="Bold"
+                               FontSize="27"/>
+                    </StackLayout>
+
+                    <StackLayout>
+                        <Label Text="1.- ¿Existe en el área de trabajo un programa de actividades de limpieza? &#10;NOTA: Se debe observar registro de actividades de limpieza, firma del supervisor o responsable para validar que la actividad fue realizada y que el formato se encuentra actualizado en cuanto a frecuencia y fecha."
+                               FontAttributes="Bold"
+                               Padding="15,10,15,0"
+                               TextColor="Black"/>
+
+                        <StackLayout Padding="15,0,15,15">
+                            <RadioButton x:Name="C1F1S3" GroupName="P1F1S3" Content="Cumple"
+                                         BackgroundColor="#FFC803" 
+                                         TextColor="Black"
+                                         CornerRadius="30"/>
+
+                            <RadioButton x:Name="NC1F1S3" GroupName="P1F1S3" Content="No Cumple"
+                                         BackgroundColor="#FFC803" 
+                                         TextColor="Black"
+                                         CornerRadius="30"/>
+
+                            <RadioButton x:Name="NA1F1S3" GroupName="P1F1S3" Content="No Cumple"
+                                         BackgroundColor="#FFC803" 
+                                         TextColor="Black"
+                                         CornerRadius="30"/>
+                        </StackLayout>
+
+                        <Label Text="2.- ¿Los articulos para la limpieza estan definidos, completos y se encuentran en un tablero estandarizado? &#10;NOTA: Se debe observar la existencia de un kit de limpieza acorde al estandar establecido, limpio, con sombras y rotulos de los elementos y este debe estar en buenas condiciones."
+                               FontAttributes="Bold"
+                               Padding="15,10,15,0"
+                               TextColor="Black"/>
+
+                        <StackLayout Padding="15,0,15,15">
+                            <RadioButton x:Name="C2F1S3" GroupName="P2F1S3" Content="Cumple"
+                                         BackgroundColor="#FFC803" 
+                                         TextColor="Black"
+                                         CornerRadius="30"/>
+
+                            <RadioButton x:Name="NC2F1S3" GroupName="P2F1S3" Content="No Cumple"
+                                         BackgroundColor="#FFC803" 
+                                         TextColor="Black"
+                                         CornerRadius="30"/>
+
+                            <RadioButton x:Name="NA2F1S3" GroupName="P2F1S3" Content="No Aplica"
+                                         BackgroundColor="#FFC803" 
+                                         TextColor="Black"
+                                         CornerRadius="30"/>
+                        </StackLayout>
+
+                        <Label Text="3.- ¿El área de trabajo se encuentra limpia y ordenada, libre de suciedad y basura? &#10;NOTA: Incluyendo pisos, gavetas gabinetes de monitores, tableros Proteams, tableros hr x hr, pizarrones, escaleras, barandales, megazzinines, guardas, racks, filtras, canaletas, mesas de trabajo , etc."
+                               FontAttributes="Bold"
+                               Padding="15,10,15,0"
+                               TextColor="Black"/>
+
+                        <StackLayout Padding="15,0,15,15">
+                            <RadioButton x:Name="C3F1S3" GroupName="P3F1S3" Content="Cumple"
+                                         BackgroundColor="#FFC803" 
+                                         TextColor="Black"
+                                         CornerRadius="30"/>
+
+                            <RadioButton x:Name="NC3F1S3" GroupName="P3F1S3" Content="No Cumple"
+                                         BackgroundColor="#FFC803" 
+                                         TextColor="Black"
+                                         CornerRadius="30"/>
+
+                            <RadioButton x:Name="NA3F1S3" GroupName="P3F1S3" Content="No Aplica"
+                                         BackgroundColor="#FFC803" 
+                                         TextColor="Black"
+                                         CornerRadius="30"/>
+                        </StackLayout>
+
+                        <Label Text="4.- ¿Las herramientas, maquinarias, dispositivos y/o equipo utilizado en el área de trabajo funcionan correctamente y se encuentran en buenas condiciones de uso? &#10;NOTA: NO se debe observar fugas, derrames, instalaciones electricas en mal estado de cualquier, cables sueltos, amarres provisionales, etc."
+                               FontAttributes="Bold"
+                               Padding="15,10,15,0"
+                               TextColor="Black"/>
+
+                        <StackLayout Padding="15,0,15,15">
+                            <RadioButton x:Name="C4F1S3" GroupName="P4F1S3" Content="Cumple"
+                                         BackgroundColor="#FFC803" 
+                                         TextColor="Black"
+                                         CornerRadius="30"/>
+
+                            <RadioButton x:Name="NC4F1S3" GroupName="P4F1S3" Content="No Cumple"
+                                         BackgroundColor="#FFC803" 
+                                         TextColor="Black"
+                                         CornerRadius="30"/>
+
+                            <RadioButton x:Name="NA4F1S3" GroupName="P4F1S3" Content="No Aplica"
+                                         BackgroundColor="#FFC803" 
+                                         TextColor="Black"
+                                         CornerRadius="30"/>
+                        </StackLayout>
+
+                        <!--Sección de hallazgos-->
+                        <StackLayout BackgroundColor="#FFC803" Padding="0,10,0,10" Margin="0,10,0,-16">
+                            <Label Text="Hallazgos"
+                               VerticalOptions="CenterAndExpand"
+                               HorizontalOptions="CenterAndExpand"
+                               TextColor="Black"
+                               FontAttributes="Bold"
+                               FontSize="30"/>
+                        </StackLayout>
+
+                        <ScrollView Orientation="Horizontal">
+                            <StackLayout Orientation="Horizontal">
+                                <StackLayout>
+                                    <Grid Margin="5,1,0,0">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*"/>
+                                            <ColumnDefinition Width="280"/>
+                                        </Grid.ColumnDefinitions>
+
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="100"/>
+                                            <RowDefinition Height="50"/>
+                                            <RowDefinition Height="50"/>
+                                        </Grid.RowDefinitions>
+
+                                        <StackLayout Grid.Column="0" Grid.Row="0" Padding="5,60,1,10">
+                                            <Label Text="Hallazgos:"                           
+                                                   TextColor="Black"
+                                                   FontSize="17"
+                                                   FontAttributes="Bold"/>
+                                        </StackLayout>
+
+                                        <StackLayout Grid.Column="1" Grid.Row="0" Padding="-29,27,50,0">
+                                            <Editor Keyboard="Text"  
+                                                    Placeholder="Escriba aqui los hallazgos"   
+                                                    PlaceholderColor="#606052" 
+                                                    MaxLength="250"   
+                                                    BackgroundColor="#FFC803" 
+                                                    TextColor="Black"   
+                                                    FontSize="15"    
+                                                    HeightRequest="97"     
+                                                    x:Name="F1H1S3"    
+                                                    Text="{Binding Hallaz1S3Txt, Mode=TwoWay}"/>
+                                        </StackLayout>
+
+                                        <StackLayout Grid.Column="0" Grid.Row="1" Padding="5,40,1,0">
+                                            <Label Text="Acciones:"    
+                                                   TextColor="Black"       
+                                                   FontSize="17"          
+                                                   FontAttributes="Bold"/>
+                                        </StackLayout>
+
+                                        <StackLayout Grid.Column="1" Grid.Row="1" Padding="-29,0,50,0">
+                                            <Entry Keyboard="Text"           
+                                                   Placeholder="Escriba aqui las acciones"         
+                                                   PlaceholderColor="#606052"   
+                                                   MaxLength="100"         
+                                                   BackgroundColor="#FFC803"                 
+                                                   Margin="0,30,0,0"                 
+                                                   TextColor="Black"                 
+                                                   FontSize="15"                    
+                                                   Text="{Binding Accion1S3Txt, Mode=TwoWay}"/>
+                                        </StackLayout>
+
+                                        <StackLayout Grid.Column="0" Grid.Row="2" Padding="5,40,45,0">
+                                            <Label Text="Fecha &#10;Compromiso:"                       
+                                                   TextColor="Black"            
+                                                   FontSize="14.3"          
+                                                   FontAttributes="Bold"/>
+                                        </StackLayout>
+
+                                        <StackLayout Grid.Column="1" Grid.Row="2" Padding="-29,0,50,0">
+                                            <DatePicker BackgroundColor="#FFC803"
+                                                        MinimumDate="01/01/2024"
+                                                        MaximumDate="12/31/2999"
+                                                        Margin="0,30,0,0"
+                                                        FontSize="15"
+                                                        TextColor="Black"
+                                                        Date="{Binding Fecha1S3Txt, Mode=TwoWay}"/>
+                                        </StackLayout>
+
+                                    </Grid>
+                                </StackLayout>
+
+                                <StackLayout>
+                                    <Grid Margin="5,1,0,0">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*"/>
+                                            <ColumnDefinition Width="280"/>
+                                        </Grid.ColumnDefinitions>
+
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="100"/>
+                                            <RowDefinition Height="50"/>
+                                            <RowDefinition Height="50"/>
+                                            <RowDefinition Height="*"/>
+                                        </Grid.RowDefinitions>
+
+                                        <StackLayout Grid.Column="0" Grid.Row="0" Padding="5,60,1,10">
+                                            <Label Text="Hallazgos:" 
+                                                   TextColor="Black"
+                                                   FontSize="17"
+                                                   FontAttributes="Bold"/>
+                                        </StackLayout>
+
+                                        <StackLayout Grid.Column="1" Grid.Row="0" Padding="-29,27,50,0">
+                                            <Editor Keyboard="Text" 
+                                                    Placeholder="Escriba aqui los hallazgos" 
+                                                    PlaceholderColor="#606052"
+                                                    MaxLength="250"
+                                                    BackgroundColor="#FFC803"
+                                                    TextColor="Black"
+                                                    FontSize="15"
+                                                    HeightRequest="97"
+                                                    x:Name="F1H2S3"
+                                                    Text="{Binding Hallaz2S3Txt, Mode=TwoWay}"/>
+                                        </StackLayout>
+
+                                        <StackLayout Grid.Column="0" Grid.Row="1" Padding="5,40,1,0">
+                                            <Label Text="Acciones:"                 
+                                                   TextColor="Black"                
+                                                   FontSize="17"                
+                                                   FontAttributes="Bold"/>
+                                        </StackLayout>
+
+                                        <StackLayout Grid.Column="1" Grid.Row="1" Padding="-29,0,50,0">
+                                            <Entry Keyboard="Text"                 
+                                                   Placeholder="Escriba aqui las acciones"                 
+                                                   PlaceholderColor="#606052"                 
+                                                   MaxLength="100"                  
+                                                   BackgroundColor="#FFC803"                  
+                                                   Margin="0,30,0,0"                  
+                                                   TextColor="Black"                  
+                                                   FontSize="15"                   
+                                                   Text="{Binding Accion2S3Txt, Mode=TwoWay}"/>
+                                        </StackLayout>
+
+                                        <StackLayout Grid.Column="0" Grid.Row="3" Padding="5,40,45,0">
+                                            <Label Text="Fecha &#10;Compromiso:"                   
+                                                   TextColor="Black"                   
+                                                   FontSize="14.3"                   
+                                                   FontAttributes="Bold"/>
+                                        </StackLayout>
+
+                                        <StackLayout Grid.Column="1" Grid.Row="3" Padding="-29,0,50,0">
+                                            <DatePicker BackgroundColor="#FFC803"
+                                                        MinimumDate="01/01/2024"
+                                                        MaximumDate="12/31/2999"
+                                                        Margin="0,30,0,0"
+                                                        FontSize="15"
+                                                        TextColor="Black"
+                                                        Date="{Binding Fecha2S3Txt, Mode=TwoWay}"/>
+                                        </StackLayout>
+                                    </Grid>
+                                </StackLayout>
+
+                                <StackLayout>
+                                    <Grid Margin="5,1,0,0">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*"/>
+                                            <ColumnDefinition Width="280"/>
+                                        </Grid.ColumnDefinitions>
+
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="100"/>
+                                            <RowDefinition Height="50"/>
+                                            <RowDefinition Height="50"/>
+                                            <RowDefinition Height="*"/>
+                                        </Grid.RowDefinitions>
+
+                                        <StackLayout Grid.Column="0" Grid.Row="0" Padding="5,60,1,10">
+                                            <Label Text="Hallazgos:"        
+                                                   TextColor="Black"                       
+                                                   FontSize="17"                      
+                                                   FontAttributes="Bold"/>
+                                        </StackLayout>
+
+                                        <StackLayout Grid.Column="1" Grid.Row="0" Padding="-29,27,50,0">
+                                            <Editor Keyboard="Text"                       
+                                                    Placeholder="Escriba aqui los hallazgos"                       
+                                                    PlaceholderColor="#606052"                      
+                                                    MaxLength="250"                      
+                                                    BackgroundColor="#FFC803"                      
+                                                    TextColor="Black"                   
+                                                    FontSize="15"                      
+                                                    HeightRequest="97"                      
+                                                    x:Name="F1H3S3"                     
+                                                    Text="{Binding Hallaz3S3Txt, Mode=TwoWay}"/>
+                                        </StackLayout>
+
+                                        <StackLayout Grid.Column="0" Grid.Row="1" Padding="5,40,1,0">
+                                            <Label Text="Acciones:"      
+                                                   TextColor="Black"       
+                                                   FontSize="17"        
+                                                   FontAttributes="Bold"/>
+                                        </StackLayout>
+
+                                        <StackLayout Grid.Column="1" Grid.Row="1" Padding="-29,0,50,0">
+                                            <Entry Keyboard="Text"        
+                                                   Placeholder="Escriba aqui las acciones"    
+                                                   PlaceholderColor="#606052"     
+                                                   MaxLength="100"      
+                                                   BackgroundColor="#FFC803"       
+                                                   Margin="0,30,0,0"        
+                                                   TextColor="Black"         
+                                                   FontSize="15"       
+                                                   Text="{Binding Accion3S3Txt, Mode=TwoWay}"/>
+                                        </StackLayout>
+
+                                        <StackLayout Grid.Column="0" Grid.Row="3" Padding="5,40,45,0">
+                                            <Label Text="Fecha &#10;Compromiso:"              
+                                                   TextColor="Black"              
+                                                   FontSize="14.3"              
+                                                   FontAttributes="Bold"/>
+                                        </StackLayout>
+
+                                        <StackLayout Grid.Column="1" Grid.Row="3" Padding="-29,0,50,0">
+                                            <DatePicker BackgroundColor="#FFC803"
+                                                        MinimumDate="01/01/2024"
+                                                        MaximumDate="12/31/2999"
+                                                        Margin="0,30,0,0"
+                                                        FontSize="15"
+                                                        TextColor="Black"
+                                                        Date="{Binding Fecha3S3Txt, Mode=TwoWay}"/>
+                                        </StackLayout>
+
+                                    </Grid>
+                                </StackLayout>
+
+                                <StackLayout>
+                                    <Grid Margin="5,1,0,0">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*"/>
+                                            <ColumnDefinition Width="280"/>
+                                        </Grid.ColumnDefinitions>
+
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="100"/>
+                                            <RowDefinition Height="50"/>
+                                            <RowDefinition Height="50"/>
+                                            <RowDefinition Height="*"/>
+                                        </Grid.RowDefinitions>
+
+                                        <StackLayout Grid.Column="0" Grid.Row="0" Padding="5,60,1,10">
+                                            <Label Text="Hallazgos:"      
+                                                   TextColor="Black"     
+                                                   FontSize="17"      
+                                                   FontAttributes="Bold"/>
+                                        </StackLayout>
+
+                                        <StackLayout Grid.Column="1" Grid.Row="0" Padding="-29,27,50,0">
+                                            <Editor Keyboard="Text"       
+                                                    Placeholder="Escriba aqui los hallazgos"      
+                                                    PlaceholderColor="#606052"      
+                                                    MaxLength="250"       
+                                                    BackgroundColor="#FFC803"       
+                                                    TextColor="Black"      
+                                                    FontSize="15"        
+                                                    HeightRequest="97"       
+                                                    x:Name="F1H4S3"     
+                                                    Text="{Binding Hallaz4S3Txt, Mode=TwoWay}"/>
+                                        </StackLayout>
+
+                                        <StackLayout Grid.Column="0" Grid.Row="1" Padding="5,40,1,0">
+                                            <Label Text="Acciones:"     
+                                                   TextColor="Black"                    
+                                                   FontSize="17"           
+                                                   FontAttributes="Bold"/>
+                                        </StackLayout>
+
+                                        <StackLayout Grid.Column="1" Grid.Row="1" Padding="-29,0,50,0">
+                                            <Entry Keyboard="Text"               
+                                                   Placeholder="Escriba aqui las acciones"                
+                                                   PlaceholderColor="#606052"       
+                                                   MaxLength="100"       
+                                                   BackgroundColor="#FFC803"     
+                                                   Margin="0,30,0,0"             
+                                                   TextColor="Black"              
+                                                   FontSize="15"                
+                                                   Text="{Binding Accion4S3Txt, Mode=TwoWay}"/>
+                                        </StackLayout>
+
+                                        <StackLayout Grid.Column="0" Grid.Row="3" Padding="5,40,45,0">
+                                            <Label Text="Fecha &#10;Compromiso:"            
+                                                   TextColor="Black"           
+                                                   FontSize="14.3"          
+                                                   FontAttributes="Bold"/>
+                                        </StackLayout>
+
+                                        <StackLayout Grid.Column="1" Grid.Row="3" Padding="-29,0,50,0">
+                                            <DatePicker BackgroundColor="#FFC803"
+                                                        MinimumDate="01/01/2024"
+                                                        MaximumDate="12/31/2999"
+                                                        Margin="0,30,0,0"
+                                                        FontSize="15"
+                                                        TextColor="Black"
+                                                        Date="{Binding Fecha4S3Txt, Mode=TwoWay}"/>
+                                        </StackLayout>
+
+                                    </Grid>
+                                </StackLayout>
+                            </StackLayout>
+                        </ScrollView>
+                    </StackLayout>
+                </StackLayout>
+
+                <!--Cuarta "S" (Estandarizar)-->
+                <StackLayout>
+                    <StackLayout Margin="0,40,0,0" BackgroundColor="#FFC803">
+                        <Label Text="4S. Estandarizar"
+                               VerticalOptions="CenterAndExpand"
+                               HorizontalOptions="CenterAndExpand"
+                               TextColor="Black"
+                               FontAttributes="Bold"
+                               FontSize="30"/>
+                    </StackLayout>
+
+                    <StackLayout>
+                        <Label Text="1.- ¿Existe en el área de trabajo un estándar visual que garantice las 3 primeras 'S' y se encuentra publicado o visible?. &#10;NOTA: El estandar debe garantizar que haya solo lo necesario, ordenado y limpio el lugar de trabajo (Formato SG-43)"
+                               FontAttributes="Bold"
+                               Padding="15,10,15,0"
+                               TextColor="Black"/>
+
+                        <StackLayout Padding="15,0,15,15">
+                            <RadioButton x:Name="C1F1S4" GroupName="P1F1S4" Content="Cumple"
+                                         BackgroundColor="#FFC803" 
+                                         TextColor="Black"
+                                         CornerRadius="30"/>
+
+                            <RadioButton x:Name="NC1F1S4" GroupName="P1F1S4" Content="No Cumple"
+                                         BackgroundColor="#FFC803" 
+                                         TextColor="Black"
+                                         CornerRadius="30"/>
+
+                            <RadioButton x:Name="NA1F1S4" GroupName="P1F1S4" Content="No Aplica"
+                                         BackgroundColor="#FFC803" 
+                                         TextColor="Black"
+                                         CornerRadius="30"/>
+                        </StackLayout>
+
+                        <Label Text="2.- ¿El área de trabajo cumple con el estandar visual establecido? &#10;NOTA: A través del estandar se debe poder distinguir facilmente una situación 'normal' de una 'anormal'"
+                               FontAttributes="Bold"
+                               Padding="15,10,15,0"
+                               TextColor="Black"/>
+
+                        <StackLayout Padding="15,0,15,15">
+                            <RadioButton x:Name="C2F1S4" GroupName="P2F1S4" Content="Cumple"
+                                         BackgroundColor="#FFC803" 
+                                         TextColor="Black"
+                                         CornerRadius="30"/>
+
+                            <RadioButton x:Name="NC2F1S4" GroupName="P2F1S4" Content="No Cumple"
+                                         BackgroundColor="#FFC803" 
+                                         TextColor="Black"
+                                         CornerRadius="30"/>
+
+                            <RadioButton x:Name="NA2F1S4" GroupName="P2F1S4" Content="No Aplica"
+                                         BackgroundColor="#FFC803" 
+                                         TextColor="Black"
+                                         CornerRadius="30"/>
+                        </StackLayout>
+
+                        <!--Sección de hallazgos-->
+                        <StackLayout BackgroundColor="#FFC803" Padding="0,10,0,10" Margin="0,10,0,-16">
+                            <Label Text="Hallazgos"
+                               VerticalOptions="CenterAndExpand"
+                               HorizontalOptions="CenterAndExpand"
+                               TextColor="Black"
+                               FontAttributes="Bold"
+                               FontSize="30"/>
+                        </StackLayout>
+
+                        <ScrollView Orientation="Horizontal">
+                            <StackLayout Orientation="Horizontal">
+                                <StackLayout>
+                                    <Grid Margin="5,1,0,0">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*"/>
+                                            <ColumnDefinition Width="280"/>
+                                        </Grid.ColumnDefinitions>
+
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="100"/>
+                                            <RowDefinition Height="50"/>
+                                            <RowDefinition Height="50"/>
+                                        </Grid.RowDefinitions>
+
+                                        <StackLayout Grid.Column="0" Grid.Row="0" Padding="5,60,1,10">
+                                            <Label Text="Hallazgos:"                           
+                                                   TextColor="Black"
+                                                   FontSize="17"
+                                                   FontAttributes="Bold"/>
+                                        </StackLayout>
+
+                                        <StackLayout Grid.Column="1" Grid.Row="0" Padding="-29,27,50,0">
+                                            <Editor Keyboard="Text"  
+                                                    Placeholder="Escriba aqui los hallazgos"   
+                                                    PlaceholderColor="#606052" 
+                                                    MaxLength="250"   
+                                                    BackgroundColor="#FFC803" 
+                                                    TextColor="Black"   
+                                                    FontSize="15"    
+                                                    HeightRequest="97"     
+                                                    x:Name="F1H1S4"    
+                                                    Text="{Binding Hallaz1S4Txt, Mode=TwoWay}"/>
+                                        </StackLayout>
+
+                                        <StackLayout Grid.Column="0" Grid.Row="1" Padding="5,40,1,0">
+                                            <Label Text="Acciones:"    
+                                                   TextColor="Black"       
+                                                   FontSize="17"          
+                                                   FontAttributes="Bold"/>
+                                        </StackLayout>
+
+                                        <StackLayout Grid.Column="1" Grid.Row="1" Padding="-29,0,50,0">
+                                            <Entry Keyboard="Text"           
+                                                   Placeholder="Escriba aqui las acciones"         
+                                                   PlaceholderColor="#606052"   
+                                                   MaxLength="100"         
+                                                   BackgroundColor="#FFC803"                 
+                                                   Margin="0,30,0,0"                 
+                                                   TextColor="Black"                 
+                                                   FontSize="15"                      
+                                                   Text="{Binding Accion1S4Txt, Mode=TwoWay}"/>
+                                        </StackLayout>
+
+                                        <StackLayout Grid.Column="0" Grid.Row="2" Padding="5,40,45,0">
+                                            <Label Text="Fecha &#10;Compromiso:"                       
+                                                   TextColor="Black"            
+                                                   FontSize="14.3"          
+                                                   FontAttributes="Bold"/>
+                                        </StackLayout>
+
+                                        <StackLayout Grid.Column="1" Grid.Row="2" Padding="-29,0,50,0">
+                                            <DatePicker BackgroundColor="#FFC803"
+                                                        MinimumDate="01/01/2024"
+                                                        MaximumDate="12/31/2999"
+                                                        Margin="0,30,0,0"
+                                                        FontSize="15"
+                                                        TextColor="Black"
+                                                        Date="{Binding Fecha1S4Txt, Mode=TwoWay}"/>
+                                        </StackLayout>
+
+                                    </Grid>
+                                </StackLayout>
+
+                                <StackLayout>
+                                    <Grid Margin="5,1,0,0">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*"/>
+                                            <ColumnDefinition Width="280"/>
+                                        </Grid.ColumnDefinitions>
+
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="100"/>
+                                            <RowDefinition Height="50"/>
+                                            <RowDefinition Height="50"/>
+                                            <RowDefinition Height="*"/>
+                                        </Grid.RowDefinitions>
+
+                                        <StackLayout Grid.Column="0" Grid.Row="0" Padding="5,60,1,10">
+                                            <Label Text="Hallazgos:" 
+                                                   TextColor="Black"
+                                                   FontSize="17"
+                                                   FontAttributes="Bold"/>
+                                        </StackLayout>
+
+                                        <StackLayout Grid.Column="1" Grid.Row="0" Padding="-29,27,50,0">
+                                            <Editor Keyboard="Text" 
+                                                    Placeholder="Escriba aqui los hallazgos" 
+                                                    PlaceholderColor="#606052"
+                                                    MaxLength="250"
+                                                    BackgroundColor="#FFC803"
+                                                    TextColor="Black"
+                                                    FontSize="15"
+                                                    HeightRequest="97"
+                                                    x:Name="F1H2S4"
+                                                    Text="{Binding Hallaz2S4Txt, Mode=TwoWay}"/>
+                                        </StackLayout>
+
+                                        <StackLayout Grid.Column="0" Grid.Row="1" Padding="5,40,1,0">
+                                            <Label Text="Acciones:"                 
+                                                   TextColor="Black"                
+                                                   FontSize="17"                
+                                                   FontAttributes="Bold"/>
+                                        </StackLayout>
+
+                                        <StackLayout Grid.Column="1" Grid.Row="1" Padding="-29,0,50,0">
+                                            <Entry Keyboard="Text"                 
+                                                   Placeholder="Escriba aqui las acciones"                 
+                                                   PlaceholderColor="#606052"                 
+                                                   MaxLength="100"                  
+                                                   BackgroundColor="#FFC803"                  
+                                                   Margin="0,30,0,0"                  
+                                                   TextColor="Black"                  
+                                                   FontSize="15"                     
+                                                   Text="{Binding Accion2S4Txt, Mode=TwoWay}"/>
+                                        </StackLayout>
+
+                                        <StackLayout Grid.Column="0" Grid.Row="3" Padding="5,40,45,0">
+                                            <Label Text="Fecha &#10;Compromiso:"                   
+                                                   TextColor="Black"                   
+                                                   FontSize="14.3"                   
+                                                   FontAttributes="Bold"/>
+                                        </StackLayout>
+
+                                        <StackLayout Grid.Column="1" Grid.Row="3" Padding="-29,0,50,0">
+                                            <DatePicker BackgroundColor="#FFC803"
+                                                        MinimumDate="01/01/2024"
+                                                        MaximumDate="12/31/2999"
+                                                        Margin="0,30,0,0"
+                                                        FontSize="15"
+                                                        TextColor="Black"
+                                                        Date="{Binding Fecha2S4Txt, Mode=TwoWay}"/>
+                                        </StackLayout>
+                                    </Grid>
+                                </StackLayout>
+
+                                <StackLayout>
+                                    <Grid Margin="5,1,0,0">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*"/>
+                                            <ColumnDefinition Width="280"/>
+                                        </Grid.ColumnDefinitions>
+
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="100"/>
+                                            <RowDefinition Height="50"/>
+                                            <RowDefinition Height="50"/>
+                                            <RowDefinition Height="*"/>
+                                        </Grid.RowDefinitions>
+
+                                        <StackLayout Grid.Column="0" Grid.Row="0" Padding="5,60,1,10">
+                                            <Label Text="Hallazgos:"        
+                                                   TextColor="Black"                       
+                                                   FontSize="17"                      
+                                                   FontAttributes="Bold"/>
+                                        </StackLayout>
+
+                                        <StackLayout Grid.Column="1" Grid.Row="0" Padding="-29,27,50,0">
+                                            <Editor Keyboard="Text"                       
+                                                    Placeholder="Escriba aqui los hallazgos"                       
+                                                    PlaceholderColor="#606052"                      
+                                                    MaxLength="250"                      
+                                                    BackgroundColor="#FFC803"                      
+                                                    TextColor="Black"                   
+                                                    FontSize="15"                      
+                                                    HeightRequest="97"                      
+                                                    x:Name="F1H3S4"                     
+                                                    Text="{Binding Hallaz3S4Txt, Mode=TwoWay}"/>
+                                        </StackLayout>
+
+                                        <StackLayout Grid.Column="0" Grid.Row="1" Padding="5,40,1,0">
+                                            <Label Text="Acciones:"      
+                                                   TextColor="Black"       
+                                                   FontSize="17"        
+                                                   FontAttributes="Bold"/>
+                                        </StackLayout>
+
+                                        <StackLayout Grid.Column="1" Grid.Row="1" Padding="-29,0,50,0">
+                                            <Entry Keyboard="Text"        
+                                                   Placeholder="Escriba aqui las acciones"    
+                                                   PlaceholderColor="#606052"     
+                                                   MaxLength="100"      
+                                                   BackgroundColor="#FFC803"       
+                                                   Margin="0,30,0,0"        
+                                                   TextColor="Black"         
+                                                   FontSize="15"        
+                                                   Text="{Binding Accion3S4Txt, Mode=TwoWay}"/>
+                                        </StackLayout>
+
+                                        <StackLayout Grid.Column="0" Grid.Row="3" Padding="5,40,45,0">
+                                            <Label Text="Fecha &#10;Compromiso:"              
+                                                   TextColor="Black"              
+                                                   FontSize="14.3"              
+                                                   FontAttributes="Bold"/>
+                                        </StackLayout>
+
+                                        <StackLayout Grid.Column="1" Grid.Row="3" Padding="-29,0,50,0">
+                                            <DatePicker BackgroundColor="#FFC803"
+                                                        MinimumDate="01/01/2024"
+                                                        MaximumDate="12/31/2999"
+                                                        Margin="0,30,0,0"
+                                                        FontSize="15"
+                                                        TextColor="Black"
+                                                        Date="{Binding Fecha3S4Txt, Mode=TwoWay}"/>
+                                        </StackLayout>
+
+                                    </Grid>
+                                </StackLayout>
+
+                                <StackLayout>
+                                    <Grid Margin="5,1,0,0">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*"/>
+                                            <ColumnDefinition Width="280"/>
+                                        </Grid.ColumnDefinitions>
+
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="100"/>
+                                            <RowDefinition Height="50"/>
+                                            <RowDefinition Height="50"/>
+                                            <RowDefinition Height="*"/>
+                                        </Grid.RowDefinitions>
+
+                                        <StackLayout Grid.Column="0" Grid.Row="0" Padding="5,60,1,10">
+                                            <Label Text="Hallazgos:"      
+                                                   TextColor="Black"     
+                                                   FontSize="17"      
+                                                   FontAttributes="Bold"/>
+                                        </StackLayout>
+
+                                        <StackLayout Grid.Column="1" Grid.Row="0" Padding="-29,27,50,0">
+                                            <Editor Keyboard="Text"       
+                                                    Placeholder="Escriba aqui los hallazgos"      
+                                                    PlaceholderColor="#606052"      
+                                                    MaxLength="250"       
+                                                    BackgroundColor="#FFC803"       
+                                                    TextColor="Black"      
+                                                    FontSize="15"        
+                                                    HeightRequest="97"       
+                                                    x:Name="F1H4S4"     
+                                                    Text="{Binding Hallaz4S4Txt, Mode=TwoWay}"/>
+                                        </StackLayout>
+
+                                        <StackLayout Grid.Column="0" Grid.Row="1" Padding="5,40,1,0">
+                                            <Label Text="Acciones:"     
+                                                   TextColor="Black"                    
+                                                   FontSize="17"           
+                                                   FontAttributes="Bold"/>
+                                        </StackLayout>
+
+                                        <StackLayout Grid.Column="1" Grid.Row="1" Padding="-29,0,50,0">
+                                            <Entry Keyboard="Text"               
+                                                   Placeholder="Escriba aqui las acciones"                
+                                                   PlaceholderColor="#606052"       
+                                                   MaxLength="100"       
+                                                   BackgroundColor="#FFC803"     
+                                                   Margin="0,30,0,0"             
+                                                   TextColor="Black"              
+                                                   FontSize="15"              
+                                                   Text="{Binding Accion4S4Txt, Mode=TwoWay}"/>
+                                        </StackLayout>
+
+                                        <StackLayout Grid.Column="0" Grid.Row="3" Padding="5,40,45,0">
+                                            <Label Text="Fecha &#10;Compromiso:"            
+                                                   TextColor="Black"           
+                                                   FontSize="14.3"          
+                                                   FontAttributes="Bold"/>
+                                        </StackLayout>
+
+                                        <StackLayout Grid.Column="1" Grid.Row="3" Padding="-29,0,50,0">
+                                            <DatePicker BackgroundColor="#FFC803"
+                                                        MinimumDate="01/01/2024"
+                                                        MaximumDate="12/31/2999"
+                                                        Margin="0,30,0,0"
+                                                        FontSize="15"
+                                                        TextColor="Black"
+                                                        Date="{Binding Fecha4S4Txt, Mode=TwoWay}"/>
+                                        </StackLayout>
+
+                                    </Grid>
+                                </StackLayout>
+                            </StackLayout>
+                        </ScrollView>
+                    </StackLayout>
+                </StackLayout>
+
+                <!--Quinta "S"-->
+                <StackLayout>
+                    <StackLayout Margin="0,40,0,0" BackgroundColor="#FFC803">
+                        <Label Text="5S. Sostener"
+                               VerticalOptions="CenterAndExpand"
+                               HorizontalOptions="CenterAndExpand"
+                               TextColor="Black"
+                               FontAttributes="Bold"
+                               FontSize="30"/>
+                    </StackLayout>
+
+                    <StackLayout>
+                        <Label Text="1.- ¿El personal del area esta capacitado en el sistema de 5S? &#10;NOTA: Se debe preguntar al personal sobre la metodologia y este debe constestar de manera correcta"
+                               FontAttributes="Bold"
+                               Padding="15,10,15,0"
+                               TextColor="Black"/>
+
+                        <StackLayout Padding="15,0,15,15">
+                            <RadioButton x:Name="C1F1S5" GroupName="P1F1S5" Content="Cumple"
+                                         BackgroundColor="#FFC803" 
+                                         TextColor="Black"
+                                         CornerRadius="30"/>
+
+                            <RadioButton x:Name="NC1F1S5" GroupName="P1F1S5" Content="No Cumple"
+                                         BackgroundColor="#FFC803" 
+                                         TextColor="Black"
+                                         CornerRadius="30"/>
+
+                            <RadioButton x:Name="NA1F1S5" GroupName="P1F1S5" Content="No Aplica"
+                                         BackgroundColor="#FFC803" 
+                                         TextColor="Black"
+                                         CornerRadius="30"/>
+                        </StackLayout>
+
+                        <Label Text="2.- ¿El personal del área conoce el resultado de la ultima evaluación y cuales fueron los hallazgos de la auditoria mas reciente? &#10;NOTA: El personal debe contestar de manera correcta y conocer los hallazgos mas recientes."
+                               FontAttributes="Bold"
+                               Padding="15,10,15,0"
+                               TextColor="Black"/>
+
+                        <StackLayout Padding="15,0,15,15">
+                            <RadioButton x:Name="C2F1S5" GroupName="P2F1S5" Content="Cumple"
+                                         BackgroundColor="#FFC803" 
+                                         TextColor="Black"
+                                         CornerRadius="30"/>
+
+                            <RadioButton x:Name="NC2F1S5" GroupName="P2F1S5" Content="No Cumple"
+                                         BackgroundColor="#FFC803" 
+                                         TextColor="Black"
+                                         CornerRadius="30"/>
+
+                            <RadioButton x:Name="NA2F1S5" GroupName="P2F1S5" Content="No Aplica"
+                                         BackgroundColor="#FFC803" 
+                                         TextColor="Black"
+                                         CornerRadius="30"/>
+                        </StackLayout>
+
+                        <Label Text="3.- ¿Se muestra evidencia y se observa atención a los hallazgos encontrados en auditorias pasadas &#10;NOTA: Se deben mostrar evidencias de que los hallazgos se resolvieron y deben ser validados por el auditor."
+                               FontAttributes="Bold"
+                               Padding="15,10,15,0"
+                               TextColor="Black"/>
+
+                        <StackLayout Padding="15,0,15,15">
+                            <RadioButton x:Name="C3F1S5" GroupName="P3F1S5" Content="Cumple"
+                                         BackgroundColor="#FFC803" 
+                                         TextColor="Black"
+                                         CornerRadius="30"/>
+
+                            <RadioButton x:Name="NC3F1S5" GroupName="P3F1S5" Content="No Cumple"
+                                         BackgroundColor="#FFC803" 
+                                         TextColor="Black"
+                                         CornerRadius="30"/>
+
+                            <RadioButton x:Name="NA3F1S5" GroupName="P3F1S5" Content="No Aplica"
+                                         BackgroundColor="#FFC803" 
+                                         TextColor="Black"
+                                         CornerRadius="30"/>
+                        </StackLayout>
+
+                        <!--Sección de hallazgos-->
+                        <StackLayout BackgroundColor="#FFC803" Padding="0,10,0,10" Margin="0,10,0,-16">
+                            <Label Text="Hallazgos"
+                               VerticalOptions="CenterAndExpand"
+                               HorizontalOptions="CenterAndExpand"
+                               TextColor="Black"
+                               FontAttributes="Bold"
+                               FontSize="30"/>
+                        </StackLayout>
+
+                        <ScrollView Orientation="Horizontal">
+                            <StackLayout Orientation="Horizontal">
+                                <StackLayout>
+                                    <Grid Margin="5,1,0,0">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*"/>
+                                            <ColumnDefinition Width="280"/>
+                                        </Grid.ColumnDefinitions>
+
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="100"/>
+                                            <RowDefinition Height="50"/>
+                                            <RowDefinition Height="50"/>
+                                        </Grid.RowDefinitions>
+
+                                        <StackLayout Grid.Column="0" Grid.Row="0" Padding="5,60,1,10">
+                                            <Label Text="Hallazgos:"                           
+                                                   TextColor="Black"
+                                                   FontSize="17"
+                                                   FontAttributes="Bold"/>
+                                        </StackLayout>
+
+                                        <StackLayout Grid.Column="1" Grid.Row="0" Padding="-29,27,50,0">
+                                            <Editor Keyboard="Text"  
+                                                    Placeholder="Escriba aqui los hallazgos"   
+                                                    PlaceholderColor="#606052" 
+                                                    MaxLength="250"   
+                                                    BackgroundColor="#FFC803" 
+                                                    TextColor="Black"   
+                                                    FontSize="15"    
+                                                    HeightRequest="97"     
+                                                    x:Name="F1H1S5"    
+                                                    Text="{Binding Hallaz1S5Txt, Mode=TwoWay}"/>
+                                        </StackLayout>
+
+                                        <StackLayout Grid.Column="0" Grid.Row="1" Padding="5,40,1,0">
+                                            <Label Text="Acciones:"    
+                                                   TextColor="Black"       
+                                                   FontSize="17"          
+                                                   FontAttributes="Bold"/>
+                                        </StackLayout>
+
+                                        <StackLayout Grid.Column="1" Grid.Row="1" Padding="-29,0,50,0">
+                                            <Entry Keyboard="Text"           
+                                                   Placeholder="Escriba aqui las acciones"         
+                                                   PlaceholderColor="#606052"   
+                                                   MaxLength="100"         
+                                                   BackgroundColor="#FFC803"                 
+                                                   Margin="0,30,0,0"                 
+                                                   TextColor="Black"                 
+                                                   FontSize="15"                      
+                                                   Text="{Binding Accion1S5Txt, Mode=TwoWay}"/>
+                                        </StackLayout>
+
+                                        <StackLayout Grid.Column="0" Grid.Row="2" Padding="5,40,45,0">
+                                            <Label Text="Fecha &#10;Compromiso:"                       
+                                                   TextColor="Black"            
+                                                   FontSize="14.3"          
+                                                   FontAttributes="Bold"/>
+                                        </StackLayout>
+
+                                        <StackLayout Grid.Column="1" Grid.Row="2" Padding="-29,0,50,0">
+                                            <DatePicker BackgroundColor="#FFC803"
+                                                        MinimumDate="01/01/2024"
+                                                        MaximumDate="12/31/2999"
+                                                        Margin="0,30,0,0"
+                                                        FontSize="15"
+                                                        TextColor="Black"
+                                                        Date="{Binding Fecha1S2Txt, Mode=TwoWay}"/>
+                                        </StackLayout>
+
+                                    </Grid>
+                                </StackLayout>
+
+                                <StackLayout>
+                                    <Grid Margin="5,1,0,0">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*"/>
+                                            <ColumnDefinition Width="280"/>
+                                        </Grid.ColumnDefinitions>
+
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="100"/>
+                                            <RowDefinition Height="50"/>
+                                            <RowDefinition Height="50"/>
+                                            <RowDefinition Height="*"/>
+                                        </Grid.RowDefinitions>
+
+                                        <StackLayout Grid.Column="0" Grid.Row="0" Padding="5,60,1,10">
+                                            <Label Text="Hallazgos:" 
+                                                   TextColor="Black"
+                                                   FontSize="17"
+                                                   FontAttributes="Bold"/>
+                                        </StackLayout>
+
+                                        <StackLayout Grid.Column="1" Grid.Row="0" Padding="-29,27,50,0">
+                                            <Editor Keyboard="Text" 
+                                                    Placeholder="Escriba aqui los hallazgos" 
+                                                    PlaceholderColor="#606052"
+                                                    MaxLength="250"
+                                                    BackgroundColor="#FFC803"
+                                                    TextColor="Black"
+                                                    FontSize="15"
+                                                    HeightRequest="97"
+                                                    x:Name="F1H2S5"
+                                                    Text="{Binding Hallaz2S2Txt, Mode=TwoWay}"/>
+                                        </StackLayout>
+
+                                        <StackLayout Grid.Column="0" Grid.Row="1" Padding="5,40,1,0">
+                                            <Label Text="Acciones:"                 
+                                                   TextColor="Black"                
+                                                   FontSize="17"                
+                                                   FontAttributes="Bold"/>
+                                        </StackLayout>
+
+                                        <StackLayout Grid.Column="1" Grid.Row="1" Padding="-29,0,50,0">
+                                            <Entry Keyboard="Text"                 
+                                                   Placeholder="Escriba aqui las acciones"                 
+                                                   PlaceholderColor="#606052"                 
+                                                   MaxLength="100"                  
+                                                   BackgroundColor="#FFC803"                  
+                                                   Margin="0,30,0,0"                  
+                                                   TextColor="Black"                  
+                                                   FontSize="15"                   
+                                                   Text="{Binding Accion2S2Txt, Mode=TwoWay}"/>
+                                        </StackLayout>
+
+                                        <StackLayout Grid.Column="0" Grid.Row="3" Padding="5,40,45,0">
+                                            <Label Text="Fecha &#10;Compromiso:"                   
+                                                   TextColor="Black"                   
+                                                   FontSize="14.3"                   
+                                                   FontAttributes="Bold"/>
+                                        </StackLayout>
+
+                                        <StackLayout Grid.Column="1" Grid.Row="3" Padding="-29,0,50,0">
+                                            <DatePicker BackgroundColor="#FFC803"
+                                                        MinimumDate="01/01/2024"
+                                                        MaximumDate="12/31/2999"
+                                                        Margin="0,30,0,0"
+                                                        FontSize="15"
+                                                        TextColor="Black"
+                                                        Date="{Binding Fecha2S2Txt, Mode=TwoWay}"/>
+                                        </StackLayout>
+                                    </Grid>
+                                </StackLayout>
+
+                                <StackLayout>
+                                    <Grid Margin="5,1,0,0">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*"/>
+                                            <ColumnDefinition Width="280"/>
+                                        </Grid.ColumnDefinitions>
+
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="100"/>
+                                            <RowDefinition Height="50"/>
+                                            <RowDefinition Height="50"/>
+                                            <RowDefinition Height="*"/>
+                                        </Grid.RowDefinitions>
+
+                                        <StackLayout Grid.Column="0" Grid.Row="0" Padding="5,60,1,10">
+                                            <Label Text="Hallazgos:"        
+                                                   TextColor="Black"                       
+                                                   FontSize="17"                      
+                                                   FontAttributes="Bold"/>
+                                        </StackLayout>
+
+                                        <StackLayout Grid.Column="1" Grid.Row="0" Padding="-29,27,50,0">
+                                            <Editor Keyboard="Text"                       
+                                                    Placeholder="Escriba aqui los hallazgos"                       
+                                                    PlaceholderColor="#606052"                      
+                                                    MaxLength="250"                      
+                                                    BackgroundColor="#FFC803"                      
+                                                    TextColor="Black"                   
+                                                    FontSize="15"                      
+                                                    HeightRequest="97"                      
+                                                    x:Name="F1H3S5"                     
+                                                    Text="{Binding Hallaz3S2Txt, Mode=TwoWay}"/>
+                                        </StackLayout>
+
+                                        <StackLayout Grid.Column="0" Grid.Row="1" Padding="5,40,1,0">
+                                            <Label Text="Acciones:"      
+                                                   TextColor="Black"       
+                                                   FontSize="17"        
+                                                   FontAttributes="Bold"/>
+                                        </StackLayout>
+
+                                        <StackLayout Grid.Column="1" Grid.Row="1" Padding="-29,0,50,0">
+                                            <Entry Keyboard="Text"        
+                                                   Placeholder="Escriba aqui las acciones"    
+                                                   PlaceholderColor="#606052"     
+                                                   MaxLength="100"      
+                                                   BackgroundColor="#FFC803"       
+                                                   Margin="0,30,0,0"        
+                                                   TextColor="Black"         
+                                                   FontSize="15"      
+                                                   Text="{Binding Accion3S2Txt, Mode=TwoWay}"/>
+                                        </StackLayout>
+
+                                        <StackLayout Grid.Column="0" Grid.Row="3" Padding="5,40,45,0">
+                                            <Label Text="Fecha &#10;Compromiso:"              
+                                                   TextColor="Black"              
+                                                   FontSize="14.3"              
+                                                   FontAttributes="Bold"/>
+                                        </StackLayout>
+
+                                        <StackLayout Grid.Column="1" Grid.Row="3" Padding="-29,0,50,0">
+                                            <DatePicker BackgroundColor="#FFC803"
+                                                        MinimumDate="01/01/2024"
+                                                        MaximumDate="12/31/2999"
+                                                        Margin="0,30,0,0"
+                                                        FontSize="15"
+                                                        TextColor="Black"
+                                                        Date="{Binding Fecha3S2Txt, Mode=TwoWay}"/>
+                                        </StackLayout>
+
+                                    </Grid>
+                                </StackLayout>
+
+                                <StackLayout>
+                                    <Grid Margin="5,1,0,0">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*"/>
+                                            <ColumnDefinition Width="280"/>
+                                        </Grid.ColumnDefinitions>
+
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="100"/>
+                                            <RowDefinition Height="50"/>
+                                            <RowDefinition Height="50"/>
+                                            <RowDefinition Height="*"/>
+                                        </Grid.RowDefinitions>
+
+                                        <StackLayout Grid.Column="0" Grid.Row="0" Padding="5,60,1,10">
+                                            <Label Text="Hallazgos:"      
+                                                   TextColor="Black"     
+                                                   FontSize="17"      
+                                                   FontAttributes="Bold"/>
+                                        </StackLayout>
+
+                                        <StackLayout Grid.Column="1" Grid.Row="0" Padding="-29,27,50,0">
+                                            <Editor Keyboard="Text"       
+                                                    Placeholder="Escriba aqui los hallazgos"      
+                                                    PlaceholderColor="#606052"      
+                                                    MaxLength="250"       
+                                                    BackgroundColor="#FFC803"       
+                                                    TextColor="Black"      
+                                                    FontSize="15"        
+                                                    HeightRequest="97"       
+                                                    x:Name="F1H4S5"     
+                                                    Text="{Binding Hallaz4S2Txt, Mode=TwoWay}"/>
+                                        </StackLayout>
+
+                                        <StackLayout Grid.Column="0" Grid.Row="1" Padding="5,40,1,0">
+                                            <Label Text="Acciones:"     
+                                                   TextColor="Black"                    
+                                                   FontSize="17"           
+                                                   FontAttributes="Bold"/>
+                                        </StackLayout>
+
+                                        <StackLayout Grid.Column="1" Grid.Row="1" Padding="-29,0,50,0">
+                                            <Entry Keyboard="Text"               
+                                                   Placeholder="Escriba aqui las acciones"                
+                                                   PlaceholderColor="#606052"       
+                                                   MaxLength="100"       
+                                                   BackgroundColor="#FFC803"     
+                                                   Margin="0,30,0,0"             
+                                                   TextColor="Black"              
+                                                   FontSize="15"               
+                                                   Text="{Binding Accion4S2Txt, Mode=TwoWay}"/>
+                                        </StackLayout>
+
+                                        <StackLayout Grid.Column="0" Grid.Row="3" Padding="5,40,45,0">
+                                            <Label Text="Fecha &#10;Compromiso:"            
+                                                   TextColor="Black"           
+                                                   FontSize="14.3"          
+                                                   FontAttributes="Bold"/>
+                                        </StackLayout>
+
+                                        <StackLayout Grid.Column="1" Grid.Row="3" Padding="-29,0,50,0">
+                                            <DatePicker BackgroundColor="#FFC803"
+                                                        MinimumDate="01/01/2024"
+                                                        MaximumDate="12/31/2999"
+                                                        Margin="0,30,0,0"
+                                                        FontSize="15"
+                                                        TextColor="Black"
+                                                        Date="{Binding Fecha4S2Txt, Mode=TwoWay}"/>
+                                        </StackLayout>
+
+                                    </Grid>
+                                </StackLayout>
+                            </StackLayout>
+                        </ScrollView>
+                    </StackLayout>
+                </StackLayout>
+
+                <StackLayout Padding="15,60,15,40" Margin="0,-50,0,0">
+                    <Button Text="Cargar resultados"       
+                            WidthRequest="250"    
+                            HeightRequest="55"   
+                            BackgroundColor="#FFC803"   
+                            FontAttributes="Bold"    
+                            FontSize="20"    
+                            VerticalOptions="Center"    
+                            HorizontalOptions="Center"     
+                            TextColor="Black"    
+                            CornerRadius="40"
+                            Clicked="Result_Clicked"/>
+                </StackLayout>
+
+                <StackLayout Padding="15,20,15,50" Margin="0,-40,0,0">
+                    <Button Text="Enviar Auditoria"  
+                            WidthRequest="250"   
+                            HeightRequest="55"   
+                            BackgroundColor="#FFC803"   
+                            FontAttributes="Bold"     
+                            FontSize="20"      
+                            VerticalOptions="Center"      
+                            HorizontalOptions="Center"      
+                            TextColor="Black"      
+                            CornerRadius="40"      
+                            Command="{Binding InsertCommandOO}"/>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Digitalizacion5S.View.LectorQR"
+             Title="Lector QR"
+             BackgroundColor="#D7EBB7">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Por favor, escanea el codigo QR para confirmar el acceso"
+                   VerticalOptions="CenterAndExpand" 
+                   HorizontalOptions="CenterAndExpand" 
+                   TextColor="Black"
+                   FontAttributes="Bold"/>
+
+            <Image Source="icon_code1.png"
+                   WidthRequest="300"
+                   HeightRequest="150"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"/>
+
+
+            <Button x:Name="btnScannerQr"
+                    Text="Escanear QR"
+                    WidthRequest="250"
+                            HeightRequest="55"
+                            BackgroundColor="#FFC803"
+                            FontAttributes="Bold"
+                            FontSize="20"
+                            VerticalOptions="Center"
+                            HorizontalOptions="Center"
+                            TextColor="Black"
+                            CornerRadius="40"
+                    Clicked="btnScannerQr_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
